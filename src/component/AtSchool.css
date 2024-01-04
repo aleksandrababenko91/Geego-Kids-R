@@ -1,0 +1,25 @@
+.AtSchool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.AtSchool a {
+    text-decoration: none;
+}
+
+/* @media screen and (min-width: 768px) {
+    .AtSchool {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+} */
+
+@media (min-width: 768px) {
+    .AtSchool {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   
+    }
+}

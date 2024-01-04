@@ -1,0 +1,130 @@
+.login-wrapper {
+    font-family: Gibson-Bold;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/public/image/gradienttitausta_kork2000px.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.login-wrapper form {
+    width: 60%;
+}
+
+.login-wrapper label {
+    display: block;
+    margin: auto;
+}
+
+.login-wrapper label p {
+    font-size: 14px;
+}
+
+.login-wrapper label:nth-child(2) p {
+    margin-top: 16px;
+}
+
+.login-wrapper h1 {
+    color:  #0EB1AF;
+    text-align: center;
+    font-size: 40px;
+}
+
+.login-wrapper a {
+    display: block;
+    text-align: center;
+}
+
+.login-wrapper .register-form-link a {
+    color: black;
+    text-decoration: underline;
+    display: inline;
+}
+
+.login-wrapper .login-note {
+    width: 60%;
+    font-size: 14px;
+    font-family: Gibson-Regular;
+    text-align: center;
+    word-wrap: break-word;
+    padding-bottom: 10px;
+}
+
+.login-wrapper button {
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    background-color: #032741;
+    color: white;
+}
+
+.login-wrapper button:hover {
+    background-color: #032741;
+
+}
+
+.login-wrapper label:nth-child(2) {
+    position: relative;
+}
+
+.login-wrapper .fa-eye,
+.login-wrapper .fa-eye-slash {
+    color: gray;
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+}
+
+.login-wrapper .hidden {
+    display: none;
+}
+
+.login-wrapper .privacy-policy {
+    color: black;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .login-wrapper {
+        background-image: url("/public/image/bg site geego.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        min-height: 100vh;
+    }
+
+    .login-wrapper form {
+        width: 40%;
+    }
+
+    .login-wrapper h1 {
+        font-size: 50px;
+    }
+
+    .login-wrapper .login-note {
+        width: 40%;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .login-wrapper form {
+        width: 40%;
+    }
+
+    .login-wrapper h1 {
+        font-size: 60px;
+    }
+    
+    .login-wrapper .login-note {
+        width: 40%;
+    }
+
+}

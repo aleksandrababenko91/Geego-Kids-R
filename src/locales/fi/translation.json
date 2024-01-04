@@ -1,0 +1,18 @@
+{
+    "login-note": "Tämä sovellus on tarkoitettu käytettäväksi työasemalla.",
+    "login-code": "Onko sinulla jo koodi?", 
+    "login-code-link": "Rekisteröidy tästä!", 
+    "login": "Kirjaudu sisään",
+    "login-username": "Sähköposti / Käyttäjätunnus",
+    "login-password": "Salasana",
+    "login-submit": "Kirjaudu",
+    "login-privacy": "Geego Kids Tietosuojaseloste",
+    "home": "Geegon kanssa lapset loistavat taidoillaan!!",
+    "home-city":"Geegocity",
+    "home-city-description":"Geegocityssä liikkumisen taidot vahvistuvat ja lapsi oppii yhdistelemään niitä.",
+    "home-sport":"Sporttiparkki",
+    "home-sport-description":"Monipuolisia ja matalan kynnyksen harjoitteita erilaisiin liikuntalajeihin.",
+    "home-school":"Koulu",
+    "home-school-description":"Geegon koulu yhdistää oppimisen ja liikkumisen jännittäväksi kokemukseksi.",
+    "menu-logout":"Kirjaudu ulos"
+}

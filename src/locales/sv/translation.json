@@ -1,0 +1,18 @@
+{
+    "login-note": "Denna applikation är avsedd för användning på en arbetsstation.",
+    "login-code": "Har du redan en kod?", 
+    "login-code-link": "Registrera här!", 
+    "login": "Logga in",
+    "login-username": "E-post / användarnamn",
+    "login-password": "Lösenord",
+    "login-submit": "Logga in",
+    "login-privacy": "Geego Kids sekretesspolicy",
+    "home": "Heja heja!!!",
+    "home-city":"Geegocity",
+    "home-city-description":"Geegocity är en magisk stad där varje område lär barnet nya färdigheter.",
+    "home-sport":"Idrottspark",
+    "home-sport-description":"Mångsidiga och lågtröskelövningar för olika sporter och lite dibadaaba.",
+    "home-school":"Skola",
+    "home-school-description":"Geegos skola kombinerar lärande och rörelse till en spännande upplevelse.",
+    "menu-logout":"Logga ut"
+}

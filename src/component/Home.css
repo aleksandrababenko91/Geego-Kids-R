@@ -1,0 +1,66 @@
+.Home div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.Buttons div {
+    margin-top: 0%;
+    align-items: center;
+    vertical-align: text-top;
+}
+
+.Home h1 {
+    width: 50%;
+    font-family: Gibson-Bold;
+    font-style: italic;
+    font-size: 45px;
+    color: #0EB1AF;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+
+.Home a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .Home div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Home h1 {
+        width: 50%;
+        color: white
+    }
+
+    .Home {
+        background-image: url("/public/image/background.png");
+        background-size: cover;
+        min-height: 100vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Home div {
+        width: 45%;
+    }
+
+    .Home h1 {
+        color: #0EB1AF
+    }
+
+    .Home {
+    background-image: url("/public/image/bg site geego.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+}
+}
