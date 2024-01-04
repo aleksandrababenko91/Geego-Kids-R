@@ -32,22 +32,7 @@ const Menubar = (props) => {
           <li>
             <Link to="/Toddlers">{t('home-school')}</Link>
           </li>
-          <li>
-          <Link to="#!" onClick={() => handleLanguageChange('fi')}>
-    <img src="image/fin.svg" alt="Finnish" style={{ width: '35px' }} />
-</Link>
-          </li>
-          <li>
-          <Link to="#!" onClick={() => handleLanguageChange('sv')}>
-    <img src="image/sv.svg" alt="Finnish" style={{ width: '35px' }} />
-</Link>
-
-          </li>
-          <li>
-          <Link to="#!" onClick={() => handleLanguageChange('en')}>
-    <img src="image/uk.svg" alt="Finnish" style={{ width: '35px' }} />
-</Link>
-          </li>
+         
           <li>
             <Logout token={props.token} />
           </li>
