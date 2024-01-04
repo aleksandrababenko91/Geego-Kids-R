@@ -14,9 +14,9 @@ const ToddlersVideo = (props) => {
         />
       </video>
       <div>
-        <button 
+      <button 
             className="closeButton" 
-            onClick={() => props.setTrigger(false)}>
+            onClick={() => props.setTrigger(false)}>SULJE
         </button>
         <h4>{props.title}</h4>
         <p>{props.description}</p>
