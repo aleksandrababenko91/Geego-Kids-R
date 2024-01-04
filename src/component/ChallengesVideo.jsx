@@ -15,10 +15,10 @@ const ChallengesVideo = (props) => {
           />
         </video>
         <div>
-          <button 
+        <button 
             className="closeButton" 
-            onClick={() => props.setTrigger(false)}>
-          </button>
+            onClick={() => props.setTrigger(false)}>SULJE
+        </button>
           <h4>{props.title}</h4>
           <p>{props.description}</p>
         </div>
