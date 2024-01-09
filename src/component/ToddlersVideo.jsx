@@ -7,7 +7,7 @@ const ToddlersVideo = (props) => {
         style={{ display: props.display }}
      >
       <div className="dummy-block"></div>
-      <video controls loop> {/* Added loop attribute here */}
+      <video controls loop autoPlay> {/* Lisätty autoPlay attribuutti */}
         <source 
             src={props.video} 
             type="video/mp4" 
