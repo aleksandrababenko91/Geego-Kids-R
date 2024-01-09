@@ -7,7 +7,7 @@ const ToddlersVideo = (props) => {
         style={{ display: props.display }}
      >
       <div className="dummy-block"></div>
-      <video controls>
+      <video controls loop> {/* Added loop attribute here */}
         <source 
             src={props.video} 
             type="video/mp4" 
@@ -25,4 +25,4 @@ const ToddlersVideo = (props) => {
     ) : ""
 }
 
-export default ToddlersVideo
+export default ToddlersVideo;
