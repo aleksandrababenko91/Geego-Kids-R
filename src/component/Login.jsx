@@ -45,13 +45,15 @@ const Login = (props) => {
   return (
     <div className="login-wrapper">
       <h1>{t('login')}</h1>
+      {/* 
       <p className="register-languages-links">
-          <Router>
-          <Link to="#!" onClick={() => handleLanguageChange('fi')}>SUOMI</Link>
+           <Router>
+           <Link to="#!" onClick={() => handleLanguageChange('fi')}>SUOMI</Link>
           <Link to="#!" onClick={() => handleLanguageChange('sv')}>RUOTSI</Link>
-          <Link to="#!" onClick={() => handleLanguageChange('en')}>EN</Link>
-          </Router>
+           <Link to="#!" onClick={() => handleLanguageChange('en')}>EN</Link>
+          </Router>*
       </p>
+       */}
       <p className="register-form-link">
         {t('login-code')}
         <a
