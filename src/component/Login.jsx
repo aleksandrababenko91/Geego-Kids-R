@@ -55,7 +55,7 @@ const Login = (props) => {
       <p className="register-form-link">
         {t('login-code')}
         <a
-          href="https://app.geegokids.com/en/koodi/"
+          href="http://app.geegokids.com/koodi"
           target="_blank"
           rel="noreferrer"
         > {t('login-code-link')}</a>
@@ -105,7 +105,7 @@ const Login = (props) => {
             {t('login-submit')}
           </button>
           <a className="privacy-policy"
-            href="https://www.geegokids.com/fi/kayttoehdot-ja-yksityisyydensuoja/verkkosivujen-tietosuojaseloste/"
+            href="https://www.geegokids.com/fi/tietosuojaseloste/"
             target="_blank"
             rel="noreferrer"
           >
