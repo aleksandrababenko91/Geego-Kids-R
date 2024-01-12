@@ -1,7 +1,7 @@
 {
-    "login-note": "Tämä sovellus on tarkoitettu käytettäväksi työasemalla.",
-    "login-code": "Onko sinulla jo koodi?", 
-    "login-code-link": "Rekisteröidy tästä!", 
+    "login-note": "Tämä sovellus on tarkoitettu ohjaajien käytettäväksi työasemilla.",
+    "login-code": "Rekisteröityminen:", 
+    "login-code-link": "Luo tunnukset ja aktivoi koodi tästä!", 
     "login": "Kirjaudu sisään",
     "login-username": "Sähköposti / Käyttäjätunnus",
     "login-password": "Salasana",
