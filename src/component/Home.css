@@ -28,6 +28,33 @@
     text-decoration: none;
 }
 
+.feedback-button {
+    background-color: #F9B200; /* Keltainen tausta */
+    color: #ffffff; /* Tekstin väri */
+    padding: 10px 40px; /* Tyhjä tila ympärillä */
+    border: none; /* Ei reunaa */
+    border-radius: 5px; /* Pyöristetyt reunat */
+    text-decoration: none; /* Ei alleviivausta */
+    display: inline-block; /* Rivi-elementti */
+    cursor: pointer; /* Kursori muuttuu painikkeen yläpuolella */
+    font-size: 20px; /* Tekstin koko */
+    font-weight: 600;
+    text-align: center; /* Tekstin tasaus keskelle */
+    margin: 4px 2px; /* Marginaali ympärillä */
+    transition: background-color 0.3s; /* Animaatio taustavärin muutokselle */
+  }
+  
+  .feedback-button:hover {
+    background-color: #0EB1AF; /* Taustaväri muuttuu hiiren ollessa elementin päällä */
+  }
+  
+  .feedback-note {
+    text-align: center; /* Keskittää tekstin */
+    margin-top: -10px; /* Nostaa tekstin ylöspäin, säädä arvoa tarpeen mukaan */
+    font-style: italic;
+  }
+  
+
 @media (min-width: 768px) {
     .Home div {
         display: flex;
