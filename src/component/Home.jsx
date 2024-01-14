@@ -9,6 +9,7 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
+    
     <div className="Home">
       <h1>{t('home')}</h1>
       <div className="Buttons">
@@ -39,8 +40,31 @@ const Home = () => {
             description={t('home-school-description')}
           />
         </Link>
+        
+
       </div>
+    <div>
+      <p></p>
     </div>
+      <div>
+     
+  <p className="feedback-form-link">
+    <a
+      href="http://www.geegokids.com/palaute"
+      target="_blank"
+      rel="noreferrer"
+      className="feedback-button"
+    >
+      {t('feedback-code-link')}
+    </a>
+  </p>
+</div>
+<p className="feedback-note">
+        {t('feedback-note')}
+      </p>
+       
+      </div>
+  
   );
 };
 
