@@ -16,14 +16,9 @@ import ChallengesFetchAPI from "./ChallengesFetchAPI";
 import ToddlersFetchAPI from "./ToddlersFetchAPI";
 import SkillsFetchAPI from "./SkillsFetchAPI";
 import "./App.css";
-import { I18nextProvider, useTranslation } from 'react-i18next';
-import i18n from './i18n';
 
 const App = () => {
-  
   const { token, setToken } = useToken();
-
-  const { t, i18n } = useTranslation();
 
   const [challengesState, setChallengesState] = useState();
   const [skillsState, setSkillsState] = useState();
@@ -31,71 +26,90 @@ const App = () => {
 
   useEffect(() => {
     const fetchChallenges = async () => {
-      var currentlang = localStorage.getItem("lang");
-      if (currentlang == null || currentlang.length !== 2)
-      {
-        currentlang = 'fi';
+      if (!token) {
+        return;
       }
-      console.log('currentlang: ' + currentlang);
-      const data = 
-        await ChallengesFetchAPI(token, currentlang);
-      //console.log(data);
+
+      var currentlang = localStorage.getItem("lang");
+      if (currentlang == null || currentlang.length !== 2) {
+        currentlang = "fi";
+      }
+      const data = await ChallengesFetchAPI(token, currentlang);
       setChallengesState(data);
     };
     fetchChallenges();
   }, [token]);
 
   useEffect(() => {
-    var currentlang = localStorage.getItem("lang");
-    if (currentlang == null || currentlang.length !== 2)
-    {
-      currentlang = 'fi';
+    if (!token) {
+      return;
     }
-    console.log('currentlang: ' + currentlang);
+
+    var currentlang = localStorage.getItem("lang");
+    if (currentlang == null || currentlang.length !== 2) {
+      currentlang = "fi";
+    }
     const fetchSkills = async () => {
       const data = await SkillsFetchAPI(token, currentlang);
-      //console.log(data);
       setSkillsState(data);
     };
     fetchSkills();
   }, [token]);
 
   useEffect(() => {
-    var currentlang = localStorage.getItem("lang");
-    if (currentlang == null || currentlang.length !== 2)
-    {
-      currentlang = 'fi';
+    if (!token) {
+      return;
     }
-    console.log('currentlang: ' + currentlang);
+
+    var currentlang = localStorage.getItem("lang");
+    if (currentlang == null || currentlang.length !== 2) {
+      currentlang = "fi";
+    }
     const fetchToddlers = async () => {
       const data = await ToddlersFetchAPI(token, currentlang);
-      //console.log(data);
       setToddlersState(data);
     };
     fetchToddlers();
   }, [token]);
 
-  return !token ? (<Login setToken={setToken}/>) : 
-  (
-    <I18nextProvider i18n={i18n}>
+  return !token ? (
+    <Login setToken={setToken} />
+  ) : (
     <div className="App">
       <Router>
-        <Menubar token={token}/>
+        <Menubar token={token} />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/AtNurseries" element={<AtNurseries />}></Route>
           <Route path="/AtSchool" element={<AtSchool />}></Route>
-          <Route path="/Challenges" element={<Challenges challengesState={challengesState} />}></Route>
-          <Route path="/Challenges/:title" element={<ChallengesTasks challengesState={challengesState} />}></Route>
-          <Route path="/Skills" element={<Skills skillsState={skillsState} />}></Route>
-          <Route path="/Skills/:title" element={<SkillsTasks skillsState={skillsState} />}></Route>
-          <Route path="/Toddlers" element={<Toddlers toddlersState={toddlersState} />}></Route>
-          <Route path="/Toddlers/:title" element={<ToddlersTasks toddlersState={toddlersState} />}></Route>
+          <Route
+            path="/Challenges"
+            element={<Challenges challengesState={challengesState} />}
+          ></Route>
+          <Route
+            path="/Challenges/:title"
+            element={<ChallengesTasks challengesState={challengesState} />}
+          ></Route>
+          <Route
+            path="/Skills"
+            element={<Skills skillsState={skillsState} />}
+          ></Route>
+          <Route
+            path="/Skills/:title"
+            element={<SkillsTasks skillsState={skillsState} />}
+          ></Route>
+          <Route
+            path="/Toddlers"
+            element={<Toddlers toddlersState={toddlersState} />}
+          ></Route>
+          <Route
+            path="/Toddlers/:title"
+            element={<ToddlersTasks toddlersState={toddlersState} />}
+          ></Route>
         </Routes>
       </Router>
     </div>
-    </I18nextProvider>
-  ); 
+  );
 };
 
 export default App;
