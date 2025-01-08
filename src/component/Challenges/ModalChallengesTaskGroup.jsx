@@ -16,17 +16,36 @@ const ModalChallengesTaskGroup = () => {
 
   return (
     <LayoutModal isOpen={isOpen} handleClose={onClose}>
-      <div className="wrapper">
+      <div className="wrapper-modal">
         <div className="modal">
-          <CloseBtn className="closeButton" onClick={onClose} />
+          <img src="/image/close_black.svg" className="closeButton" onClick={onClose} />
           <h1 className="title">{selectedData.title}</h1>
-          {selectedData.challenges && selectedData.challenges.map((task) => (
-            <ChallengesTaskGroup
-              key={task.id} 
-              title={task.title} 
-              imgUrl={task.imgUrl} 
-            />
-          ))}
+          {selectedData.challenges && selectedData.challenges.map((challenge) => {
+                return (
+                  challenge.task_groups[0] && 
+                  challenge.task_groups[0].tasks[0] && (
+                    <li key={challenge.id}>
+                      <ChallengesTaskGroup 
+                        title={challenge.title}
+                        description={challenge.description}
+                        //key={challenge.id}
+                        imgUrl={challenge.task_groups[0].tasks[0].thumbnail}
+                        challenge={challenge}
+                      />
+                    </li>
+                  )
+                );
+              }
+          // (
+          //   <ChallengesTaskGroup
+          //     key={task.id} 
+          //     title={task.title} 
+          //     imgUrl={task.imgUrl}
+              
+          //   />
+          // )
+          
+          )}
         </div>
       </div>
     </LayoutModal>

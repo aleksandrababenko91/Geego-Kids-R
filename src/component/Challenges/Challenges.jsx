@@ -9,14 +9,11 @@ const Challenges = (props) => {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
 
-
   const filteredCategories = searchQuery
     ? props.challengesState.filter((category) =>
         category.title.toLowerCase().includes(searchQuery.toLowerCase())
       )
     : props.challengesState;
-
-
 
   return (
     <div className="section-challenges">
@@ -36,7 +33,7 @@ const Challenges = (props) => {
         <p className="text">{t('home-city-description')}</p>
       </div>
       <div className="challengesContainer">
-      <InputSearch
+        <InputSearch
           className="search-challenges"
           onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
@@ -51,12 +48,11 @@ const Challenges = (props) => {
                   imgUrl={challengesSubcategory.icon}
                   challenges={challengesSubcategory.challenges}
                 />
-
             )
           ))}
         </div>
       </div>
-          <ModalChallengesTaskGroup />
+      <ModalChallengesTaskGroup />
     </div>
   );
 };

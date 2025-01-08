@@ -1,56 +1,89 @@
+.wrapper-modal {
+  padding: 16px 16px 80px 16px;
+  margin: auto;
+}
 
-  
-  .modal {
-    border: 2px solid var.$button-hover-gradient2;
-    min-width: 270px;
-    background: var.$primary-primary;
-    padding: 44px 8px 24px 8px;
-    //margin: auto;
-    border-radius: 12px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var.$primary-border;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-    @include mix.media-q("md") {
-      padding: 10%;
-      min-width: 500px;
-    }
-
-    @include mix.media-q("xl") {
-      min-width: 700px;
-    }
-
-    .modal {
-    @include mix.media-q("md") {
-      padding: 48px 32px 32px 32px;
-    }
-  
-    .closeButton {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-
-      @include mix.media-q("md") {
-        top: 30px;
-        right: 18px;
-      }
-    }
+@media (min-width: 768px) {
+  .wrapper-modal {
+    padding: 40px 16px 80px 16px;
   }
 }
 
-.title {
+@media (min-width: 1200px) {
+  .wrapper-modal {
+    padding: 10vh 16px;
+  }
+}
+
+.wrapper-modal .modal {
+  border: 2px solid #0EB1AF;
+  min-width: 270px;
+  background: #032741; /* Замените на реальный цвет */
+  padding: 44px 8px 24px 8px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F9B200; /* Замените на реальный цвет */
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .wrapper-modal .modal {
+    padding: 10%;
+    min-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper .modal {
+    min-width: 700px;
+  }
+}
+
+.wrapper-modal .modal .modal {
+  padding: 48px 32px 32px 32px;
+}
+
+@media (min-width: 768px) {
+  .wrapper-modal .modal .modal {
+    padding: 48px 32px 32px 32px;
+  }
+}
+
+.wrapper-modal .modal .closeButton {
+  background: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (min-width: 768px) {
+  .wrapper-modal .modal .closeButton {
+    top: 30px;
+    right: 18px;
+  }
+}
+
+.wrapper-modal .title {
   text-align: center;
   width: 100%;
-  @include mix.apply-font-styles(var.$h6-font);
-  color: var.$secondary-white;
-  @include mix.media-q("md") { 
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  color: #F2F3F4; 
+}
+
+@media (min-width: 768px) {
+  .wrapper-modal .title {
     font-size: 32px;
   }
-  @include mix.media-q("xl") { 
+}
+
+@media (min-width: 1200px) {
+  .wrapper-modal .title {
     font-size: 40px;
   }
 }

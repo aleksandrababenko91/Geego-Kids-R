@@ -1,3 +1,60 @@
-.card {
+.task-group-card {
   margin-top: 8%;
+}
+
+.task-group-cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid #0EB1AF;
+  padding: 20px;
+}
+
+@media (min-width: 768px) { 
+  .task-group-cardContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 1200px) {
+  .task-group-cardContainer {
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 48px;
+  }
+}
+
+.iconWrapper {
+  border-radius: 100%;
+  width: 30%;
+  height: 30%;
+}
+
+.task-group-header {
+
+  font-size: 20px; /* замените на размер шрифта var.$h6-font */
+  font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #FFFFFF; 
+}
+
+
+@media (min-width: 1920px) { 
+  .task-group-header{
+    font-size: 32px;
+  }
 }

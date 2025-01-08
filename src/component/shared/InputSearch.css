@@ -38,6 +38,9 @@
   transition: all 0.3s ease;
   opacity: 0;
   pointer-events: none;
+  outline: none; 
+  border: none;
+  background: transparent;
 
 }
 
