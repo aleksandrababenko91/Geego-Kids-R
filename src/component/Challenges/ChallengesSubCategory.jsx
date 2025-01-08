@@ -1,5 +1,5 @@
 import useStateModal from './stateModalSubCategoryGroup';
-
+import './ChallengesSubCategory.css';
 const ChallengesSubCategory = (props) => {
 
   const open = useStateModal((state) => state.open);
@@ -8,18 +8,17 @@ const ChallengesSubCategory = (props) => {
   const handleClick = () => {
     setSelectedData(props);
     open();
-    // console.log("Selected category data:", data);
   };
   
 
   return (
-    <div className="article">
+    <div className="container-card">
       <div className="imgContainer">
         <img src={props.imgUrl} alt={props.title} fill sizes="100%"  />
       </div>
-      <div className="content-challenges">
-        <button type="button" className="title-challenges" onClick={handleClick}>
-          <span>{props.title}</span>
+      <div className="content">
+        <button  className="title-card" onClick={handleClick}>
+          <span >{props.title}</span>
         </button>
       </div>
     </div>
