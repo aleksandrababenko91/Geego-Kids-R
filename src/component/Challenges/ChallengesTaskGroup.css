@@ -1,5 +1,13 @@
 .task-group-card {
   margin-top: 8%;
+  width: 120px; /* Устанавливаем фиксированную ширину */
+  height: 120px;
+  top: 0;
+  left: 0;
+  border-radius: 50%; /* Обеспечиваем, чтобы контейнер для изображения был круглым */
+  display: flex; /* Используем flexbox для центрирования */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; 
 }
 
 .task-group-cardContainer {
@@ -38,9 +46,15 @@
 }
 
 .iconWrapper {
-  border-radius: 100%;
-  width: 30%;
-  height: 30%;
+
+
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%; /* Обеспечиваем, чтобы контейнер для изображения был круглым */
+
+
 }
 
 .task-group-header {
