@@ -4,7 +4,8 @@ import Home from "./component/Home";
 import AtNurseries from "./component/AtNurseries";
 import AtSchool from "./component/AtSchool";
 import Menubar from "./component/Menubar";
-import Challenges from "./component/Challenges";
+import Header from './component/Header/Header';
+// import Challenges from "./component/Challenges";
 import ChallengesTasks from "./component/ChallengesTasks";
 import Skills from "./component/Skills";
 import SkillsTasks from "./component/SkillsTasks";
@@ -16,6 +17,8 @@ import ChallengesFetchAPI from "./ChallengesFetchAPI";
 import ToddlersFetchAPI from "./ToddlersFetchAPI";
 import SkillsFetchAPI from "./SkillsFetchAPI";
 import "./App.css";
+import Challenges from './component/Challenges/Challenges';
+
 
 const App = () => {
   const { token, setToken } = useToken();
@@ -75,9 +78,10 @@ const App = () => {
   return !token ? (
     <Login setToken={setToken} />
   ) : (
-    <div className="App">
+    <div >
       <Router>
-        <Menubar token={token} />
+        {/* <Menubar token={token} /> */}
+        <Header token={token} />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/AtNurseries" element={<AtNurseries />}></Route>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
+import './Logout.css';
 
 const Logout = (props) => {
   const handleLogout = () => {
@@ -12,10 +13,10 @@ const Logout = (props) => {
   const { t } = useTranslation();
   
   return (
-    <div className="Logout" onClick={handleLogout}>
-      <i className="fa-solid fa-user"></i>
+    <button className="btn_main" onClick={handleLogout}>
+      {/* <i className="fa-solid fa-user"></i> */}
       {t('menu-logout')}
-    </div>
+    </button>
   );
 };
 

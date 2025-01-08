@@ -1,0 +1,53 @@
+
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid #0EB1AF;
+  padding: 20px;
+
+  @include mixins.media-q("md") {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+
+  @include mixins.media-q("xl") {
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    gap: 48px;
+  }
+}
+
+.iconWrapper {
+  border-radius: 100%;
+  width: 30%;
+  height: 30%;
+}
+
+.header {
+  @include mixins.apply-font-styles(var.$h6-font);
+  color: var.$secondary-white;
+
+  @include mixins.media-q("md") {
+    @include mixins.apply-font-styles(var.$h2-font);
+  }
+  @include mixins.media-q("xl") {
+    @include mixins.apply-font-styles(var.$h2-font);
+  }
+  @include mixins.media-q("xxxl") {
+    @include mixins.apply-font-styles(var.$h2-font);
+  }
+}

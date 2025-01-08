@@ -68,8 +68,8 @@
     }
 
     .Home {
-        background-image: url("/public/image/background.png");
-        background-size: cover;
+        /* background-image: url("/public/image/background.png"); */
+        /* background-size: cover; */
         min-height: 100vh;
     }
 }

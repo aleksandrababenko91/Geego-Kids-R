@@ -1,0 +1,182 @@
+.section-challenges {
+  margin-top: 125px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 1025px) {
+  .section-challenges {
+    margin-top: 145px;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper-challenges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.challengesContainer {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-challenges {
+  color: #333; /* Замените на нужный цвет */
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 480px) {
+  .title-challenges {
+    margin-bottom: 32px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-challenges {
+    font-size: 40px;
+  }
+}
+
+.pagesWrapper {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .pagesWrapper {
+    margin-bottom: 48px;
+  }
+}
+
+.content-challenges {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 550px) {
+  .content-challenges {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .content-challenges {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .search {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .search {
+    margin-bottom: 72px;
+  }
+}
+
+.loadMore {
+  align-self: center;
+}
+
+.loadMore.hidden {
+  display: none;
+}
+
+.fullHeight {
+  min-height: calc(100vh - 160px);
+}
+
+.text {
+  max-width: 566px;
+  padding: 20px;
+  color: #333; /* Замените на нужный цвет */
+  border: 1px solid #ccc; /* Замените на нужный цвет */
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .text {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+.elips {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  left: 10%;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+  .elips {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .elips {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 15s linear infinite;
+}
+
+.ellipse-animation {
+  animation: drawEllipse 9s ease-in-out forwards;
+  clip-path: inset(0 100% 0 0);
+}
+
+@keyframes drawEllipse {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}

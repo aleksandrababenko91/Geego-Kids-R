@@ -1,0 +1,16 @@
+.menu {
+  color: white;
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .menu {
+      color: white;
+
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+  }
+}

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from 'react-i18next';
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 
 import "./Login.css";
 
@@ -35,12 +35,13 @@ const Login = (props) => {
     setShowPassword(!showPassword);
   };
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  // const { t, i18n } = useTranslation();
 
-  const handleLanguageChange = (lng) => {
-    i18n.changeLanguage(lng);
-    localStorage.setItem("lang", lng);
-  };
+  // const handleLanguageChange = (lng) => {
+  //   i18n.changeLanguage(lng);
+  //   localStorage.setItem("lang", lng);
+  // };
 
   return (
     <div className="login-wrapper">

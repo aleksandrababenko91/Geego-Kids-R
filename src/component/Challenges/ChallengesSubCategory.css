@@ -1,0 +1,93 @@
+.article {
+  padding: 66px 0;
+  border: 2px solid #D1D6DA; /* Замените на соответствующее значение */
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 810px) {
+  .article {
+    padding: 74px;
+  }
+}
+
+.article::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  background: linear-gradient(222deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+  transition: all 0.3s ease 0s;
+}
+
+.article:hover::before {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.article.hideBg::before {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.imgContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.imgContainer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: linear-gradient(226deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 54.85%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.imgContainer > img {
+  object-fit: cover;
+}
+
+.content-challenges {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  position: relative;
+  z-index: 6;
+  justify-content: space-between;
+  opacity: 1;
+  transition: opacity 0.3s ease 0s; /* Замените на правильное значение */
+}
+
+@media (min-width: 810px) {
+  .content-challenges {
+    gap: 50px;
+  }
+}
+
+.content-challenges.hidden {
+  opacity: 0;
+}
+
+.title-challenges {
+  font-family: "YourFontFamily", sans-serif; /* Замените на соответствующий шрифт */
+  font-size: 20px;
+  margin: 50px 0;
+}
+
+@media (min-width: 810px) {
+  .title-challenges {
+    font-size: 24px;
+  }
+}

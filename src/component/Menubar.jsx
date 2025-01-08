@@ -7,14 +7,15 @@ import "../index.css";
 
 const Menubar = (props) => {
 
-  const { t, i18n } = useTranslation();
+  // const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
-  const handleLanguageChange = (lng) => {
-    i18n.changeLanguage(lng);
-    localStorage.setItem("lang", lng);
+  // const handleLanguageChange = (lng) => {
+  //   i18n.changeLanguage(lng);
+  //   localStorage.setItem("lang", lng);
 
-   //pois window.location.reload(true);
-  };
+  //  //pois window.location.reload(true);
+  // };
 
   return (
     <div className="Menubar">

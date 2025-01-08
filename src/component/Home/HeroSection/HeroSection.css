@@ -1,0 +1,73 @@
+@use "../../styles/variables" as var;
+@use "../../styles/mixins.scss" as mx;
+
+.section {
+
+  margin-top: 80px;
+  position: relative;
+  background: #F2F3F4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.videoContainer {
+  background: transparent;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px; 
+  width: 100%;
+  height: 100%;
+
+}
+
+.textContainer {
+  color: #0EB1AF;
+
+  font-size: 40px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  line-height: 150%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  margin-bottom: 56px;
+  text-align: center;
+  font-family: "Gibson", sans-serif;
+
+
+
+
+  opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Shifted downward */
+  animation: fadeIn 3.5s ease-in forwards; /* Animation time reduced to 1.5s */
+
+}
+@media (min-width: 768px) {
+  .textContainer {
+  font-size: 30px;
+}
+}
+@media (min-width: 1200px) {
+  .textContainer {
+  font-size: 40px;
+}
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Invisible */
+    transform: translateY(20px); /* Shifted downward */
+  }
+  to {
+    opacity: 1; /* Visible */
+    transform: translateY(0); /* Back to place */
+  }
+}
