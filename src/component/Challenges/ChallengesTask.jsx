@@ -16,7 +16,7 @@ const ChallengesTask = (props) => {
     <div key={props.id}>
       <div  className="card-task" onClick={handleClick}>
           <img className="image-task" src={props.imgUrl} alt={props.title} />
-          <div className="name-task">{props.title}</div>
+          <h2 className="name-task">{props.title}</h2>
       </div>
       <ChallengesVideo 
         //key={props.id} 
