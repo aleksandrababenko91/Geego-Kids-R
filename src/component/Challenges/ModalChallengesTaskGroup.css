@@ -15,15 +15,15 @@
   }
 }
 
-.wrapper-modal .modal {
+ .modal {
   border: 2px solid #0EB1AF;
   min-width: 270px;
-  background: #032741; /* Замените на реальный цвет */
+  background: #032741; 
   padding: 44px 8px 24px 8px;
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
-  border-color: #F9B200; /* Замените на реальный цвет */
+  border-color: #F9B200;
   position: relative;
   display: flex;
   align-items: center;
@@ -31,43 +31,35 @@
 }
 
 @media (min-width: 768px) {
-  .wrapper-modal .modal {
+  .modal {
     padding: 10%;
     min-width: 500px;
+
   }
 }
 
 @media (min-width: 1200px) {
-  .wrapper .modal {
+  .modal {
     min-width: 700px;
   }
 }
 
-.wrapper-modal .modal .modal {
-  padding: 48px 32px 32px 32px;
-}
-
-@media (min-width: 768px) {
-  .wrapper-modal .modal .modal {
-    padding: 48px 32px 32px 32px;
-  }
-}
-
-.wrapper-modal .modal .closeButton {
+.closeButton {
   background: white;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+
 }
 
 @media (min-width: 768px) {
-  .wrapper-modal .modal .closeButton {
+ .closeButton {
     top: 30px;
     right: 18px;
+    
   }
 }
 
-.wrapper-modal .title {
+.title {
   text-align: center;
   width: 100%;
   font-size: 24px;
@@ -77,13 +69,13 @@
 }
 
 @media (min-width: 768px) {
-  .wrapper-modal .title {
+  .title {
     font-size: 32px;
   }
 }
 
 @media (min-width: 1200px) {
-  .wrapper-modal .title {
+   .title {
     font-size: 40px;
   }
 }

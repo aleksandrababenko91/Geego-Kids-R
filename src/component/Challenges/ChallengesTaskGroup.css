@@ -1,15 +1,3 @@
-.task-group-card {
-  margin-top: 8%;
-  width: 120px; /* Устанавливаем фиксированную ширину */
-  height: 120px;
-  top: 0;
-  left: 0;
-  border-radius: 50%; /* Обеспечиваем, чтобы контейнер для изображения был круглым */
-  display: flex; /* Используем flexbox для центрирования */
-  justify-content: center; /* Центрируем по горизонтали */
-  align-items: center; 
-}
-
 .task-group-cardContainer {
   display: flex;
   align-items: center;
@@ -22,53 +10,43 @@
   padding: 20px;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .task-group-cardContainer {
-    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    height: fit-content;
+    gap: 24px;
   }
 }
 
 @media (min-width: 1200px) {
   .task-group-cardContainer {
-    padding: 20px;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
     gap: 48px;
   }
 }
 
 .iconWrapper {
-
-
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 50%; /* Обеспечиваем, чтобы контейнер для изображения был круглым */
-
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .task-group-header {
-
-  font-size: 20px; /* замените на размер шрифта var.$h6-font */
+  font-size: 20px;
   font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: 0.01em;
-    color: #FFFFFF; 
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  max-width: 150px;
 }
 
 
-@media (min-width: 1920px) { 
-  .task-group-header{
-    font-size: 32px;
+@media (min-width: 1920px) {
+  .task-group-header {
+    font-size: 24px;
   }
 }
+
