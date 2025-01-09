@@ -1,5 +1,6 @@
 import useStateModal from './stateModalSubCategoryGroup';
 import './ChallengesSubCategory.css';
+
 const ChallengesSubCategory = (props) => {
 
   const open = useStateModal((state) => state.open);

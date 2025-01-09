@@ -1,34 +1,27 @@
-import React, { useState } from "react";
-import ChallengesVideo from "./ChallengesVideo";
+import React from "react";
 import "./ChallengesTask.css";
-
+import stateVideoModal from './stateVideoModal';
 
 const ChallengesTask = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isFlex, setIsFlex] = useState("none");
+  const open = stateVideoModal((state) => state.open);
+  const setSelectedTask = stateVideoModal((state) => state.setSelectedTask);
 
-  const handleClick = (props) => {
-    setIsOpen(true);
-    setIsFlex("flex");
+  const handleClick = () => {
+    setSelectedTask({
+      taskName: props.title,
+      taskVideo: props.video,
+      taskDescription: props.description,
+    });
+    open();
   };
 
   return (
-    <div key={props.id}>
-      <div  className="card-task" onClick={handleClick}>
-          <img className="image-task" src={props.imgUrl} alt={props.title} />
-          <h2 className="name-task">{props.title}</h2>
+    <div className="card-task" onClick={handleClick}>
+      <div>
+        <img className="image-task" src={props.imgUrl} alt={props.title} />
       </div>
-      <ChallengesVideo 
-        //key={props.id} 
-        video={props.video}
-        title={props.title}
-        description={props.description}
-        trigger={isOpen}
-        display={isFlex}
-        setTrigger={setIsOpen}
-        />
+      <div>{props.title}</div>
     </div>
-
   );
 };
 

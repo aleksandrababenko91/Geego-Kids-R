@@ -1,29 +1,26 @@
-import React from "react";
-import "./Video.css";
+// import React from "react";
+// import stateVideoModal from "./stateVideoModal";
+// import './ChallengesVideo.css';
 
-const ChallengesVideo = (props) => {
-  return (props.trigger) ?
-    (<div 
-        className="Video" 
-        style={{ display: props.display }}
-      >
-        <div className="dummy-block"></div>
-        <video controls loop autoPlay> {/* Lisätty autoPlay attribuutti */}
-          <source 
-            src={props.video} 
-            type="video/mp4" 
-          />
-        </video>
-        <div>
-        <button 
-            className="closeButton" 
-            onClick={() => props.setTrigger(false)}>SULJE
-        </button>
-          <h4>{props.title}</h4>
-          <p>{props.description}</p>
-        </div>
-      </div>
-    ) : ("");
-};
+// const ChallengesVideo = (props) => {
+//   const openVideoModal = () => {
+//     stateVideoModal.getState().setSelectedTask({
+//       taskName: props.title,
+//       taskVideo: props.video,
+//     });
+//     stateVideoModal.getState().open();
+//   };
 
-export default ChallengesVideo;
+//   return (
+//     <div className="Video" style={{ display: props.display }}>
+//       <div className="dummy-block"></div>
+//       <button onClick={openVideoModal}>Open Video</button>
+//       <div>
+//         <h4>{props.title}</h4>
+//         <p>{props.description}</p>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ChallengesVideo;

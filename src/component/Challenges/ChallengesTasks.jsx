@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router";
 import ChallengesTask from "./ChallengesTask";
 import "./ChallengesTasks.css";
+import ModalChallengesVideo from './ModalChallengesVideo';
 
 const ChallengesTasks = (props) => {
   const { title } = useParams();
@@ -14,27 +15,27 @@ const ChallengesTasks = (props) => {
           .map((challenge, index) => {
             return (
               <div key={index}>
-                  <h2 className="title-tasks">{challenge.title}</h2>
-                  {/* <p className="title-tasks">{challenge.description}</p> */}
+                <h2 className="title-tasks">{challenge.title}</h2>
+                <p className="description-tasks">{challenge.description}</p>
                 <ul className="list-tasks">
                   {challenge.task_groups.map((tasks) => {
-                    return tasks.tasks.map((task) => {
-                      return (
-                          <ChallengesTask
-                            key={task.id}
-                            imgUrl={task.thumbnail}
-                            title={task.title}
-                            video={task.video}
-                            description={task.description}
-                          />
-                      );
-                    });
+                    return tasks.tasks.map((task) => (
+                        <ChallengesTask
+                          key={task.id}
+                          imgUrl={task.thumbnail}
+                          title={task.title}
+                          video={task.video}
+                          description={task.description}
+                        />
+
+                    ));
                   })}
                 </ul>
               </div>
             );
           });
       })}
+      <ModalChallengesVideo />
     </div>
   );
 };

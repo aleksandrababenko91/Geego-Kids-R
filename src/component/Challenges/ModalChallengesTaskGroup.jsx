@@ -36,15 +36,6 @@ const ModalChallengesTaskGroup = () => {
                   )
                 );
               }
-          // (
-          //   <ChallengesTaskGroup
-          //     key={task.id} 
-          //     title={task.title} 
-          //     imgUrl={task.imgUrl}
-              
-          //   />
-          // )
-          
           )}
         </div>
       </div>
