@@ -1,53 +1,50 @@
-
-
-.cardContainer {
+.card-task {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
-  gap: 24px;
-  width: 100%;
-  height: fit-content;
-  border-bottom: 1px solid #0EB1AF;
-  padding: 20px;
-
-  @include mixins.media-q("md") {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    height: fit-content;
-  }
-
-  @include mixins.media-q("xl") {
-    padding: 20px;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    gap: 48px;
-  }
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
-.iconWrapper {
+.image-task {
+  border: 20px solid #0EB1AF; 
   border-radius: 100%;
-  width: 30%;
-  height: 30%;
+  position: relative;
+  width: 120px;
+  height: 120px;
 }
 
-.header {
-  @include mixins.apply-font-styles(var.$h6-font);
-  color: var.$secondary-white;
+@media (min-width: 696px) {
+  .image-task {
+    width: 180px;
+    height: 180px;
+  }
+}
 
-  @include mixins.media-q("md") {
-    @include mixins.apply-font-styles(var.$h2-font);
+@media (min-width: 1200px) { 
+  .image-task {
+    width: 180px;
+    height: 180px;
   }
-  @include mixins.media-q("xl") {
-    @include mixins.apply-font-styles(var.$h2-font);
+}
+
+.name-task {
+
+  font-size: 16px; 
+  text-align: center;
+  width: 260px;
+}
+
+@media (min-width: 696px) {
+  .name-task {
+    font-size: 18px;
+    width: 334px;
   }
-  @include mixins.media-q("xxxl") {
-    @include mixins.apply-font-styles(var.$h2-font);
+}
+
+@media (min-width: 1200px) { 
+  .name-task {
+    font-size: 24px;
+    width: 397px;
   }
 }

@@ -26,12 +26,24 @@
 
 .iconWrapper {
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
 
+}
+@media (min-width: 768px) {
+  .iconWrapper{
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .iconWrapper{
+    width: 160px;
+    height: 160px;
+  }
 }
 
 .task-group-header {
@@ -40,7 +52,7 @@
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: #FFFFFF;
-  max-width: 150px;
+
 }
 
 
@@ -49,4 +61,3 @@
     font-size: 24px;
   }
 }
-

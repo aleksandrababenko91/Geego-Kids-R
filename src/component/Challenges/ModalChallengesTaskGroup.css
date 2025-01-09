@@ -19,7 +19,7 @@
   border: 2px solid #0EB1AF;
   min-width: 270px;
   background: #032741; 
-  padding: 44px 8px 24px 8px;
+  padding: 44px 18px 24px 18px;
   border-radius: 12px;
   border-width: 1px;
   border-style: solid;
@@ -78,4 +78,8 @@
    .title {
     font-size: 40px;
   }
+}
+
+.modal-card {
+  width: 100%;
 }

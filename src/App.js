@@ -6,7 +6,7 @@ import AtSchool from "./component/AtSchool";
 import Menubar from "./component/Menubar";
 import Header from './component/Header/Header';
 // import Challenges from "./component/Challenges";
-import ChallengesTasks from "./component/ChallengesTasks";
+import ChallengesTasks from "./component/Challenges/ChallengesTasks";
 import Skills from "./component/Skills";
 import SkillsTasks from "./component/SkillsTasks";
 import Toddlers from "./component/Toddlers";

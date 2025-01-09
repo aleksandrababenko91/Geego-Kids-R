@@ -1,90 +1,78 @@
-
-
-.card {
-  margin-top: 8%;
+.section-tasks {
+  margin-top: 132px;
 }
 
-.Tasks {
-
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  font-family: Gibson-Bold;
-  /* text-align: center; */
-  padding: 20px 10px
+.title-tasks {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
 }
 
-.Tasks h2 {
-  font-size: 40px;
-  padding: 10px 30px;
-}
-
-.Tasks i {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.Tasks.ChallengesTasks i {
-  color: #6b3776;
-}
-
-.Tasks.SkillsTasks i {
-  color: #0074ac;
-}
-
-.Tasks.ToddlersTasks i {
-  color: #eb6a39;
-}
-
-.Tasks h2 i:nth-child(1) {
-  font-size: 15px;
-  margin-left: 30px;
-}
-
-.Tasks h2 i:nth-child(2) {
-  font-size: 10px;
-}
-
-.Tasks h2 i:nth-child(3) {
-  font-size: 5px;
-}
-
-.Tasks p{
-  font-family: Gibson-regular;
-  padding: 0 30px;
-}
-
-.Tasks ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.Tasks ul li {
-  display: flex;
-  padding: 5px 10px;
-}
-
-@media (min-width: 576px) {
-  .Tasks ul li {
-      width: 50%;
-      padding: 5px;
+@media (min-width: 696px) {
+  .title-tasks {
+    font-size: 32px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+    margin-bottom: 32px;
   }
 }
 
-@media (min-width: 768px) {
-  .Tasks ul li {
-      width: 33%;
-      padding: 5px;
+@media (min-width: 1200px) {
+  .title-tasks {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin-bottom: 56px;
   }
 }
 
-@media (min-width: 992px) {
-  .Tasks ul li {
-      width: 25%;
-      padding: 5px;
+.list-tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  margin: 20px auto;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  .list-tasks {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    margin: 32px auto;
+    max-width: 1366px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-tasks {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 56px;
+    margin: 56px auto;
+    max-width: 1680px;
+  }
+}
+
+.button-tasks {
+  color: black;
+  display: flex;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+@media (min-width: 696px) {
+  .button-tasks {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button-tasks {
+    margin-bottom: 72px;
   }
 }

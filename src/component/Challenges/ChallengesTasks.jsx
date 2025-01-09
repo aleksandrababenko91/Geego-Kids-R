@@ -5,42 +5,31 @@ import "./ChallengesTasks.css";
 
 const ChallengesTasks = (props) => {
   const { title } = useParams();
-  const { challengesState } = props;
-
-  // Проверка на существование challengesState и его структуру
-  if (!Array.isArray(challengesState)) {
-    return <p>Данные отсутствуют или некорректны</p>;
-  }
 
   return (
-    <div className="Tasks ChallengesTasks">
-      {challengesState.map((challengesSubcategory) => {
+    <div className="section-tasks">
+      {props.challengesState && props.challengesState.map((challengesSubcategory) => {
         return challengesSubcategory.challenges
-          ?.filter((challenge) => challenge.title === title)
+          .filter((challenge) => challenge.title === title)
           .map((challenge, index) => {
             return (
               <div key={index}>
-                <div>
-                  <h2>
-                    {challenge.title}
-                    <i className="fa-solid fa-circle"></i>
-                    <i className="fa-solid fa-circle"></i>
-                    <i className="fa-solid fa-circle"></i>
-                  </h2>
-                  <p>{challenge.description}</p>
+                <div className="title-tasks">
+                  <h2>{challenge.title}</h2>
+                  {/* <p className="title-tasks">{challenge.description}</p> */}
                 </div>
-                <ul>
-                  {challenge.task_groups?.map((tasks) => {
-                    return tasks.tasks?.map((task) => {
+                <ul className="list-tasks">
+                  {challenge.task_groups.map((tasks) => {
+                    return tasks.tasks.map((task) => {
                       return (
-                        <li key={task.id}>
                           <ChallengesTask
+                            key={task.id}
                             imgUrl={task.thumbnail}
                             title={task.title}
                             video={task.video}
                             description={task.description}
                           />
-                        </li>
+                        
                       );
                     });
                   })}

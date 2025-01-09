@@ -24,7 +24,7 @@ const ModalChallengesTaskGroup = () => {
                 return (
                   challenge.task_groups[0] && 
                   challenge.task_groups[0].tasks[0] && (
-                    <li key={challenge.id}>
+                    <li className="modal-card" key={challenge.id}>
                       <ChallengesTaskGroup 
                         title={challenge.title}
                         description={challenge.description}

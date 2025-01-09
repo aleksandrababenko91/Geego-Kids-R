@@ -14,11 +14,9 @@ const ChallengesTask = (props) => {
 
   return (
     <div key={props.id}>
-      <div className="Task ChallengesTask" onClick={handleClick}>
-        <div>
-          <img src={props.imgUrl} alt={props.title} />
-        </div>
-        <div>{props.title}</div>
+      <div  className="card-task" onClick={handleClick}>
+          <img className="image-task" src={props.imgUrl} alt={props.title} />
+          <div className="name-task">{props.title}</div>
       </div>
       <ChallengesVideo 
         //key={props.id} 
@@ -28,8 +26,9 @@ const ChallengesTask = (props) => {
         trigger={isOpen}
         display={isFlex}
         setTrigger={setIsOpen}
-      />
+        />
     </div>
+
   );
 };
 
