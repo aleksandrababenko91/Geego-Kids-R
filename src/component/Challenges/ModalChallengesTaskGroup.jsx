@@ -18,7 +18,9 @@ const ModalChallengesTaskGroup = () => {
     <LayoutModal isOpen={isOpen} handleClose={onClose}>
       <div className="wrapper-modal">
         <div className="modal">
-          <img src="/image/close_black.svg" className="closeButton" onClick={onClose} />
+          <div className="closeBtn">
+            <img src="/image/close_black.svg"  onClick={onClose} />
+          </div>
           <h1 className="title">{selectedData.title}</h1>
           {selectedData.challenges && selectedData.challenges.map((challenge) => {
                 return (

@@ -1,7 +1,5 @@
 .container-card {
-  /* border: 5px solid  #F9B200; */
   border: 5px solid #0EB1AF;
-  /* border: 25px solid white; */
   border-radius: 50%; 
   position: relative;
   overflow: hidden;

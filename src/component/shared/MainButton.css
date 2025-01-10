@@ -1,0 +1,103 @@
+.btn_main {
+  font-size: 16px; 
+  font-weight: 600; 
+  position: relative;
+  overflow: hidden;
+  color: #ffffff; 
+  padding: 10.5px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: none;
+  border: none;
+}
+
+@media (any-hover: hover) {
+  .btn_main {
+    transition: all 0.3s ease; 
+  }
+}
+
+@media (min-width: 768px) { 
+  .btn_main {
+    padding: 14px 24px;
+  }
+}
+
+.btn_main::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #CDE8E8 0%,
+    #30B8B7 36.5%,
+    #1A9E9D 96%,
+    #176968 100%
+  );
+  box-shadow:
+    inset 3px 3px 3px rgba(255, 255, 255, 0.38),
+    inset -3px -3px 3px rgba(4, 12, 88, 0.53);
+  transition: all 0.3s ease; 
+}
+
+.btn_main::before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #F2F3F4 5%,
+    #0EB1AF 17%,
+    #0EB1AF 40%,
+    #176968 95%,
+
+  );
+  box-shadow:
+    inset 3px 3px 3px rgba(255, 255, 255, 0.213),
+    inset -3px -3px 3px rgba(54, 4, 88, 0.532);
+  transition: all 0.3s ease; 
+}
+
+@media (any-hover: hover) {
+  .btn_main:hover::after {
+    opacity: 0;
+  }
+
+  .btn_main:hover::before {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .btn_main:active::after {
+    opacity: 0;
+  }
+
+  .btn_main:active::before {
+    opacity: 1;
+  }
+}
+
+.btn_main:disabled::after {
+  opacity: 0;
+}
+
+.btn_main:disabled {
+  background: #bfbfbf; 
+  color: #7d7d7d; 
+  cursor: default;
+}
+
+.btn_main:disabled::before {
+  opacity: 0;
+}

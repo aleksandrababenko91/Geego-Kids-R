@@ -15,8 +15,10 @@ const ChallengesTasks = (props) => {
           .map((challenge, index) => {
             return (
               <div key={index}>
-                <h2 className="title-tasks">{challenge.title}</h2>
-                <p className="description-tasks">{challenge.description}</p>
+                <div className="headerContainer-tasks">
+                  <h1 className="title-challenges-tasks">{challenge.title}</h1>
+                  <p className="text-tasks">{challenge.description}</p>
+                </div>
                 <ul className="list-tasks">
                   {challenge.task_groups.map((tasks) => {
                     return tasks.tasks.map((task) => (
@@ -27,7 +29,6 @@ const ChallengesTasks = (props) => {
                           video={task.video}
                           description={task.description}
                         />
-
                     ));
                   })}
                 </ul>
