@@ -1,5 +1,4 @@
-
-.article {
+.article-categories {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -7,7 +6,7 @@
   position: relative;
   overflow: hidden;
 }
-.imageContainer {
+.imageContainer-categories {
   position: relative;
   display: flex;
   justify-content: center;
@@ -65,7 +64,6 @@
 
 
 .shortDesc {
-  /* @include mixin.apply-font-styles(var.$text-16-font); */
   display: -webkit-box;
   overflow: hidden;
   margin-bottom: 24px;
@@ -78,16 +76,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(192, 164, 183, 0.6);;/* замените на вашу переменную цвета или HEX */
+  background-color: rgba(192, 164, 183, 0.6);;
   color: white;
-  font-size: var(--font-m); /* замените на вашу переменную размера шрифта */
+  font-size: var(--font-m); 
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   z-index: 9;
   transition: all 0.3s;
   &:hover {
-    background-color: var(--hover); /* замените на вашу переменную цвета */
+    background-color: var(--hover); 
   }
   &.animatePulse {
     animation: pulse 1.5s infinite;

@@ -1,4 +1,4 @@
-.header {
+.mainHeader {
   position: fixed;
   width: 100%;
   top: 0;
@@ -9,12 +9,12 @@
   padding: 12.5px 0;
 }
   @media (min-width: 1025px) {
-    .header {
+    .mainHeader {
     padding: 18px 0;
   }
 }
 
-.wrapper {
+.wrapper-header {
   max-width: 1680px;
   margin: 0 auto;
   display: flex;
@@ -24,7 +24,7 @@
   padding: 0 10px;
 }
   @media (min-width: 1281px) {
-    .wrapper{
+    .wrapperheader{
     padding: 0 40px;
 
 

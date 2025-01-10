@@ -3,9 +3,9 @@ import './Card.css';
 
 const Card = ({ image, title, description, cardBackground, url }) => {
   return (
-    <div className="article" style={{ background: cardBackground }}>
+    <div className="article-categories" style={{ background: cardBackground }}>
       <a href={url}>
-        <div className="imageContainer">
+        <div className="imageContainer-categories">
           <img src={image} alt={title} style={{ width: 250, height: 230}}/>
         </div>
         <div className="card-content">

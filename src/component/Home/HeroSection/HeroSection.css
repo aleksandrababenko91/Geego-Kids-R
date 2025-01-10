@@ -1,8 +1,4 @@
-@use "../../styles/variables" as var;
-@use "../../styles/mixins.scss" as mx;
-
 .section {
-
   margin-top: 80px;
   position: relative;
   background: #F2F3F4;
@@ -46,9 +42,9 @@
 
 
 
-  opacity: 0; /* Initially invisible */
-  transform: translateY(20px); /* Shifted downward */
-  animation: fadeIn 3.5s ease-in forwards; /* Animation time reduced to 1.5s */
+  opacity: 0;
+  transform: translateY(20px); 
+  animation: fadeIn 3.5s ease-in forwards; 
 
 }
 @media (min-width: 768px) {
@@ -63,11 +59,11 @@
 }
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Invisible */
-    transform: translateY(20px); /* Shifted downward */
+    opacity: 0; 
+    transform: translateY(20px);
   }
   to {
-    opacity: 1; /* Visible */
-    transform: translateY(0); /* Back to place */
+    opacity: 1; 
+    transform: translateY(0); 
   }
 }

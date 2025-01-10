@@ -16,17 +16,17 @@ const ModalChallengesVideo = () => {
 
   return (
     <LayoutModal isOpen={isOpen} handleClose={onClose}>
-      <div className="wrapper">
-        <div className="modal">
+      <div className="wrapper-modal-video">
+        <div className="modal-video">
         <img src="/image/close_black.svg" className="closeButton" onClick={onClose} />
-          <h1 className="title">{selectedTask.taskName}</h1>
+          <h1 className="title-modal-video">{selectedTask.taskName}</h1>
           <video
-            className="video"
+            className="video-modal"
             src={selectedTask.taskVideo}
             controls
             autoPlay
           />
-          <p className="description">{selectedTask.taskDescription}</p>
+          <p className="video-modal">{selectedTask.taskDescription}</p>
         </div>
       </div>
     </LayoutModal>

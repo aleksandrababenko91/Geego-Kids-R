@@ -10,8 +10,8 @@ const Header = (props) => {
   const { t } = useTranslation();
 
   return (
-    <div className="header">
-      <div className="wrapper">
+    <div className="mainHeader">
+      <div className="wrapper-header">
       <Link to="/">
         <img src="/image/geegokids_logo_rgb.png" alt="logo" className="logo" />
       </Link>

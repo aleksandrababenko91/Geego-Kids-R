@@ -1,12 +1,14 @@
 import React from 'react';
 import './Categories.css';
-import Card from './Card';
 import { items } from './items';
 import { createKey } from './createKey';
+import Card from './Card';
 
 const Categories = () => {
   return (
-    <div>
+    <div className="roleSection-categories">
+      <div className="container-categories">
+        <div className="content-categories">
           {items.map((item) => {
             const cardKey = createKey();
             return (
@@ -21,6 +23,8 @@ const Categories = () => {
             );
           })}
 
+    </div>
+    </div>
     </div>
   );
 };

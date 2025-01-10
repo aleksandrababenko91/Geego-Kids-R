@@ -1,173 +1,155 @@
-@use "../../../styles/variables" as var;
-@use "../../../styles/mixins" as mixin;
-
 .link {
-  @include mixin.apply-font-styles(var.$h3-font);
   position: relative;
   padding: 3px 0;
-  color: var.$secondary-white;
-  transition: all var.$transition-duration-base var.$transition-timing-base 0s;
-  @media (any-hover: hover) {
-    &:hover {
-      color: var.$primary-hover;
-    }
-  }
-  .link--modal {
-    text-decoration: underline; 
-  }
-  &--default {
-    &::before {
-      content: "";
-      width: 0;
-      height: 2px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: var.$primary-hover;
-      transition: all 0.3s ease 0s;
-    }
-    @media (any-hover: hover) {
-      &:hover {
-        color: var.$primary-hover;
-      }
-    }
-    &.active {
-      color: var.$primary-hover;
-      &::before {
-        width: 100%;
-      }
-    }
-  }
+  color: #fff; /* замените на значение переменной var.$secondary-white */
+  transition: all 0.3s ease; /* замените на значения var.$transition-duration-base и var.$transition-timing-base */
+}
 
-  &--help {
-    border-bottom: 1px solid var.$secondary-white;
-    @media (any-hover: hover) {
-      &:hover,
-      &:focus {
-        border-bottom: 1px solid var.$primary-hover;
-      }
-      &:active {
-        border-bottom: 1px solid var.$secondary-white;
-      }
-    }
-    @media (max-width: 696px) {
-      font-size: 14px;
-    }
-  }
+.link:hover {
+  color: #ff6600; /* замените на значение переменной var.$primary-hover */
+}
 
-  &--structure {
-    border-bottom: var.$secondary-white;
-    @media (any-hover: hover) {
-      &:hover,
-      &:focus {
-        border-bottom: var.$primary-hover;
-      }
-      &:active {
-        border-bottom: var.$secondary-white;
-      }
-    }
-    @media (max-width: 696px) {
-      font-size: 14px;
-    }
-  }
+.link--modal {
+  text-decoration: underline;
+}
 
-  &--footer {
-    @media (any-hover: hover) {
-      &:active {
-        text-decoration: underline;
-      }
-    }
-    @media (max-width: 696px) {
-      font-size: 14px;
-    }
-  }
+.link--default {
+  position: relative;
+}
 
-  &--docs {
-    @media (any-hover: hover) {
-      &:active {
-        text-decoration: underline;
-      }
-    }
-    @media (max-width: 696px) {
-      font-size: 14px;
-    }
-  }
+.link--default::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ff6600; /* замените на значение переменной var.$primary-hover */
+  transition: all 0.3s ease;
+}
 
-  &--burger {
-    font-size: 20px;
-    position: relative;
-    display: block;
-    font-weight: 700;
-    line-height: 1.2;
-    padding-left: 14px;
-    height: 100%;
-    &.active {
-      color: var.$primary-hover;
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 2px;
-        height: 100%;
-        background-color: var.$primary-hover;
-      }
-    }
-  }
-  &--card {
-    font-size: 16px;
-    font-weight: 400;
-    position: relative;
-    padding: 10px 4px;
-    display: block;
+.link--default:hover {
+  color: #ff6600; /* замените на значение переменной var.$primary-hover */
+}
 
-    color: var.$secondary-white;
-    @include mixin.apply-font-styles(var.$text-16-font);
-    &::before {
-      content: "";
-      width: 0;
-      height: 1px;
-      background-color: var.$primary-border;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transition: width var.$transition-duration-base
-        var.$transition-timing-base 0s;
-    }
-    @media (any-hover: hover) {
-      &:hover {
-        color: var.$secondary-white;
-        &::before {
-          width: 100%;
-        }
-      }
-    }
-  }
+.link--default.active {
+  color: #ff6600; /* замените на значение переменной var.$primary-hover */
+}
 
-  &--blog {
-    position: relative;
-    padding: 11.5px 4px;
-    display: block;
-    color: var.$secondary-black;
-    @include mixin.apply-font-styles(var.$text-16-font);
+.link--default.active::before {
+  width: 100%;
+}
 
-    &::before {
-      content: "";
-      width: 0;
-      height: 1px;
-      background-color: var.$primary-border;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transition: width var.$transition-duration-base
-        var.$transition-timing-base 0s;
-    }
-    @media (any-hover: hover) {
-      &:hover {
-        &::before {
-          width: 100%;
-        }
-      }
-    }
+.link--help {
+  border-bottom: 1px solid #fff; /* замените на значение переменной var.$secondary-white */
+}
+
+.link--help:hover,
+.link--help:focus {
+  border-bottom: 1px solid #ff6600; /* замените на значение переменной var.$primary-hover */
+}
+
+.link--help:active {
+  border-bottom: 1px solid #fff; /* замените на значение переменной var.$secondary-white */
+}
+
+@media (max-width: 696px) {
+  .link--help,
+  .link--structure,
+  .link--footer,
+  .link--docs {
+    font-size: 14px;
   }
+}
+
+.link--structure {
+  border-bottom: 1px solid #fff; /* замените на значение переменной var.$secondary-white */
+}
+
+.link--structure:hover,
+.link--structure:focus {
+  border-bottom: 1px solid #ff6600; /* замените на значение переменной var.$primary-hover */
+}
+
+.link--structure:active {
+  border-bottom: 1px solid #fff; /* замените на значение переменной var.$secondary-white */
+}
+
+.link--footer:active,
+.link--docs:active {
+  text-decoration: underline;
+}
+
+.link--burger {
+  font-size: 20px;
+  position: relative;
+  display: block;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-left: 14px;
+  height: 100%;
+}
+
+.link--burger.active {
+  color: #ff6600; /* замените на значение переменной var.$primary-hover */
+}
+
+.link--burger.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #ff6600; /* замените на значение переменной var.$primary-hover */
+}
+
+.link--card {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  padding: 10px 4px;
+  display: block;
+  color: #fff; /* замените на значение переменной var.$secondary-white */
+}
+
+.link--card::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #ccc; /* замените на значение переменной var.$primary-border */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.link--card:hover {
+  color: #fff; /* замените на значение переменной var.$secondary-white */
+}
+
+.link--card:hover::before {
+  width: 100%;
+}
+
+.link--blog {
+  position: relative;
+  padding: 11.5px 4px;
+  display: block;
+  color: #000; /* замените на значение переменной var.$secondary-black */
+}
+
+.link--blog::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #ccc; /* замените на значение переменной var.$primary-border */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.link--blog:hover::before {
+  width: 100%;
 }

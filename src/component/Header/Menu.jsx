@@ -1,25 +1,27 @@
 // import MainLink from "../shared/MainLink/MainLink";
-import { Link } from "react-router-dom";
-
+import MainLink from '../shared/MainLink/MainLink';
 import './Menu.css';
-
 import { useTranslation } from 'react-i18next';
-
 
 const Menu = () => {
   const { t } = useTranslation();
 
-
   return (
     <ul className="menu">
           <li>
-          <Link to="/Challenges" >{t('home-city')}</Link>
+          <MainLink to="/Challenges" >{t('home-city')}</MainLink>
           </li>
           <li>
-            <Link to="/Skills" >{t('home-sport')} </Link>
+            <MainLink to="/Skills" >{t('home-sport')} </MainLink>
           </li>
           <li>
-            <Link to="/Toddlers" >{t('home-school')}</Link>
+            <MainLink to="/Toddlers" >{t('home-school')}</MainLink>
+          </li>
+          <li>
+            <MainLink to="https://www.geegokids.com/fi/" >{t('palaute')}</MainLink>
+          </li>
+          <li>
+            <MainLink to="https://www.geegokids.com/fi/" >{t('ladata')}</MainLink>
           </li>
     </ul>
   );
