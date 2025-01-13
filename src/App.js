@@ -18,6 +18,7 @@ import ToddlersFetchAPI from "./ToddlersFetchAPI";
 import SkillsFetchAPI from "./SkillsFetchAPI";
 import "./App.css";
 import Challenges from './component/Challenges/Challenges';
+import Footer from './component/Footer/Footer';
 
 
 const App = () => {
@@ -111,6 +112,7 @@ const App = () => {
             element={<ToddlersTasks toddlersState={toddlersState} />}
           ></Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

@@ -1,17 +1,13 @@
 import React from "react";
 import { helpLinks } from "./constants";
-impport './HelpLinks.css';
-import { createKey } from "../../../lib/createKey";
-import MainLink from "../MainLink/MainLink";
-import stateModalPdf from '@/state/stateModalPdf';
-// import { useTranslations } from 'next-intl';
+import './HelpLinks.css';
+import { createKey } from "../../shared/createKey";
+import MainLink from "../../shared/MainLink/MainLink";
 
+// import { useTranslations } from 'next-intl';
 
 const HelpLinks = () => {
   // const t = useTranslations("Footer");
-
-  const open = stateModalPdf(state => state.open);
-
 
   return (
     <div className="helpList">
@@ -20,7 +16,6 @@ const HelpLinks = () => {
           url={url}
           key={createKey()}
           type={type}
-          onClick={() => open(url)}
           name={name}
           // name={t(name)}
         >

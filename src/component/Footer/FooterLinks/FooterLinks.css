@@ -1,16 +1,16 @@
-.list {
+.list-links {
   width: 100px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.list > *:not(:last-child) {
+.list-links > *:not(:last-child) {
   margin-bottom: 16px;
 }
 
 @media (min-width: 697px) {
-  .list {
+  .list-links {
     width: 130px;
   }
 }

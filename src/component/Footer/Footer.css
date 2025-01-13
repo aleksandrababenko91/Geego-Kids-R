@@ -1,8 +1,8 @@
-.section {
-  background-color: #primary-footer; /* Замените на реальный цвет */
+.section-footer {
+  background-color: #032741; 
 }
 
-.block {
+.block-footer {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 100%;
@@ -10,13 +10,13 @@
 }
 
 @media (min-width: 1025px) {
-  .block {
+  .block-footer {
     max-width: 1680px;
   }
 }
 
 .footer {
-  margin: 24px auto;
+  margin: auto;
   padding: 12px;
   display: flex;
   flex-wrap: wrap;
@@ -25,12 +25,12 @@
 
 @media (min-width: 1025px) {
   .footer {
-    margin: 68px auto 56px auto;
+    margin: auto;
     padding: 8px 0;
   }
 }
 
-.contacts {
+.contacts-footer {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -40,7 +40,7 @@
 }
 
 @media (min-width: 1025px) {
-  .contacts {
+  .contacts-footer {
     width: auto;
     margin-top: 0;
     align-items: flex-start;
@@ -66,6 +66,7 @@
   }
 }
 
+
 .smallScreen {
   display: flex;
   flex-direction: column;
@@ -79,6 +80,7 @@
   }
 }
 
+
 .bigScreen {
   display: none;
 }
@@ -89,17 +91,21 @@
   }
 }
 
+
 .centerItem {
   display: flex;
   justify-content: center;
 }
 
-.logoWrapper {
+
+.logoWrapper-footer {
+  background-color: #032741; 
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0 auto 32px auto;
+  margin: auto;
   width: 268px;
   font-weight: 700;
   font-size: 20px;
@@ -115,7 +121,7 @@
 }
 
 @media (min-width: 697px) {
-  .logoWrapper {
+  .logoWrapper-footer {
     font-size: 36px;
     font-weight: 700;
   }

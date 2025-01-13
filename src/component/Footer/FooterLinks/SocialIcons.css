@@ -1,0 +1,24 @@
+.list-social {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+@media (min-width: 697px) {
+  .list-social {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+}
+
+.icon-social {
+  width: 48px;
+  height: 48px;
+  fill: #fcfcfc;
+  transition: all 0.3s ease 0s;
+}
+
+.icon-social:hover {
+  fill: #a03a7e;
+}
