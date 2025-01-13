@@ -24,7 +24,7 @@ const ModalChallengesVideo = () => {
               <i class="fas fa-info-circle"></i> 
             </div>
             <div class="info-alert">
-              <p className="video-modal">{selectedTask.taskDescription}</p>
+              <p>{selectedTask.taskDescription}</p>
             </div>
           </div>
           <img src="/image/close_black.svg" className="closeButton" onClick={onClose} />

@@ -6,6 +6,7 @@ import ModalChallengesTaskGroup from './ModalChallengesTaskGroup';
 import InputSearch from '../shared/InputSearch';
 import LoadMore from '../shared/LoadMoreBtn';
 
+
 const Challenges = (props) => {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
@@ -31,7 +32,14 @@ const Challenges = (props) => {
     <div className="section-challenges">
       <div className="wrapper-challenges">
         <div className="headerContainer">
+          <div className="titleDots">
           <h1 className="title-challenges">{t('home-city')}</h1>
+          <div className="Challenges main-category">
+            <i className="fa-solid fa-circle"></i>
+            <i className="fa-solid fa-circle"></i>
+            <i className="fa-solid fa-circle"></i>
+          </div>
+          </div>
           <p className="text">{t('home-city-description')}</p>
         </div>
       </div>
@@ -40,7 +48,7 @@ const Challenges = (props) => {
           className="search-challenges"
           onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
-          placeholder="Haku sana"
+          placeholder="Hakusana"
         />
         <div className="content-challenges">
           {validCategories.slice(0, visibleCount).map((challengesSubcategory) => (

@@ -2,6 +2,7 @@
   background: #f5f5f5; 
   margin-top: 125px;
   padding-bottom: 48px;
+
 }
 
 @media (min-width: 1025px) {
@@ -38,7 +39,7 @@
   color: #032741;; 
   text-align: center;
   font-size: 20px;
-  margin-bottom: 20px;
+
   font-family: "Gibson", "sans-serif";
   font-weight: 700;
   line-height: 1.5;
@@ -47,7 +48,6 @@
 
 @media (min-width: 480px) {
   .title-challenges {
-    margin-bottom: 32px;
     font-size: 32px;
   }
 }
@@ -136,48 +136,28 @@
   }
 }
 
-.elips {
-  position: relative;
-  height: 40px;
-  width: 40px;
-  left: 10%;
-  margin-bottom: 10px;
-}
 
-@media (min-width: 600px) {
-  .elips {
-    height: 80px;
-    width: 80px;
-  }
+.titleDots{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
 }
-
-@media (min-width: 1800px) {
-  .elips {
-    height: 100px;
-    width: 100px;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.rotate {
-  animation: rotate 15s linear infinite;
+.Challenges i {
+    color:  #6B377C;
 }
 
 
+.main-category i:nth-child(1) {
+  font-size: 15px;
+  margin-left: 30px;
+}
 
-@keyframes drawEllipse {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+.main-category i:nth-child(2) {
+  font-size: 10px;
+}
+
+.main-category i:nth-child(3) {
+  font-size: 5px;
 }

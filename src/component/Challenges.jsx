@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 import ChallengesSubCategory from "./ChallengesSubCategory";
 import "./Challenges.css";
-import "../index.css";
+
 
 const Challenges = (props) => {
 
