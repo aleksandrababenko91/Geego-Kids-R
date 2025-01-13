@@ -1,13 +1,14 @@
 .section-challenges {
   background: #f5f5f5; 
-  margin-top: 125px;
+  margin-top: 105px;
   padding-bottom: 48px;
+  padding-top: 10px;
 
 }
 
 @media (min-width: 1025px) {
   .section-challenges {
-    margin-top: 145px;
+    margin-top: 105px;
   }
 }
 
