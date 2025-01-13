@@ -4,10 +4,12 @@ import './HelpLinks.css';
 import { createKey } from "../../shared/createKey";
 import MainLink from "../../shared/MainLink/MainLink";
 
-// import { useTranslations } from 'next-intl';
+import { useTranslation } from 'react-i18next';
+
 
 const HelpLinks = () => {
-  // const t = useTranslations("Footer");
+  const { t } = useTranslation();
+
 
   return (
     <div className="helpList">
@@ -16,10 +18,9 @@ const HelpLinks = () => {
           url={url}
           key={createKey()}
           type={type}
-          name={name}
-          // name={t(name)}
+          name={t(name)}
         >
-          {/* {t(name)} */} {name}
+          {t(name)} 
         </MainLink>
       ))}
     </div>

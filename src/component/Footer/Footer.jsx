@@ -12,7 +12,7 @@ const Footer = () => {
   // const { t } = useTranslation();
 
   return (
-    <>
+<>
       <div className="section-footer">
       <div className="block-footer bigScreen">
           <div className="footer">

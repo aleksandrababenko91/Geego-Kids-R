@@ -2,17 +2,16 @@ import MainLink from "../../shared/MainLink/MainLink";
 import { navigationLinks } from "./constants";
 import './FooterLinks.css';
 import { createKey } from '../../shared/createKey';
-// import { useTranslations } from 'next-intl';
-
+import { useTranslation } from 'react-i18next';
 
 const FooterLinks = () => {
-  // const t = useTranslations("Footer");
+  const { t } = useTranslation();
 
   return (
     <div className="list-links">
       {navigationLinks.map(({ url, name, type }) => (
         <MainLink url={url} key={createKey()} type={type} name={name}>
-           {name}
+          {t(name)}
         </MainLink>
       ))}
     </div>

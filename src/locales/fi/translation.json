@@ -12,15 +12,15 @@
     "login-submit": "Kirjaudu",
     "login-privacy": "Geego Kids Tietosuojaseloste",
     "home": "Geegon kanssa lapset loistavat taidoillaan!!",
-    "home-city":"GEEGOCITY",
+    "home-city":"Geegocity",
     "home-city-description":"Geegocityssä liikkumisen taidot vahvistuvat ja lapsi oppii yhdistelemään niitä.",
-    "home-sport":"SPORTTIPARKKI",
+    "home-sport":"Sporttiparkki",
     "home-sport-description":"Monipuolisia ja matalan kynnyksen harjoitteita erilaisiin liikuntalajeihin.",
-    "home-school":"KOULU",
+    "home-school":"Koulu",
     "home-school-description":"Geegon koulu yhdistää oppimisen ja liikkumisen jännittäväksi kokemukseksi.",
     "menu-logout":"Kirjaudu ulos",
     "slogan":"Geegon kanssa lapset loistavat taidoillaan!",
-     "ladata": "LADATA",
-    "palaute": "PALAUTE"
+    "ladata": "Ladata",
+    "palaute": "Palaute"
 
 }
