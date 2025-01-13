@@ -1,14 +1,15 @@
 .section-tasks {
   margin-top: 132px;
+  background: #F2F3F4;
   
 }
 
 .headerContainer-tasks {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0px 50px;
 }
 
 .title-challenges-tasks {

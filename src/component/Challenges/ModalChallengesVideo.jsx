@@ -17,27 +17,24 @@ const ModalChallengesVideo = () => {
     <LayoutModal isOpen={isOpen} handleClose={onClose}>
       <div className="wrapper-modal-video">
         <div className="modal-video">
-          <img src="/image/close_black.svg" className="closeButton" onClick={onClose} />
+          <div className="inRow">
           <div class="info-container">
             <div class="info-icon">
+              <h1 className="title-modal-video">{selectedTask.taskName}</h1>
               <i class="fas fa-info-circle"></i> 
             </div>
             <div class="info-alert">
-              {/* <p className="video-modal">{selectedTask.taskDescription}</p> */}
-              <p className="video-modal">jfhjsdfhjsdfhjsdfjsjfkjskskfskfjskfs
-                hfhfhhfhhfhfhfhfhfhfhhsfshfjzbfhjsfhjsfjshfjs
-                hfgfhfhhfhfsjdfjfjfjjdksdjksdjskfnnncnkdfjksjfksjfksjfksfjSASHA!!!!!
-              </p>
+              <p className="video-modal">{selectedTask.taskDescription}</p>
             </div>
           </div>
-          <h1 className="title-modal-video">{selectedTask.taskName}</h1>
+          <img src="/image/close_black.svg" className="closeButton" onClick={onClose} />
+          </div>
           <video
             className="video-modal"
             src={selectedTask.taskVideo}
             controls
             autoPlay
           />
-          <p className="video-modal">{selectedTask.taskDescription}</p>
         </div>
       </div>
     </LayoutModal>

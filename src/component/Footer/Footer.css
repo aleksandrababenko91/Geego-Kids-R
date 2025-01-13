@@ -1,0 +1,122 @@
+.section {
+  background-color: #primary-footer; /* Замените на реальный цвет */
+}
+
+.block {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 100%;
+  max-width: 1024px;
+}
+
+@media (min-width: 1025px) {
+  .block {
+    max-width: 1680px;
+  }
+}
+
+.footer {
+  margin: 24px auto;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 1025px) {
+  .footer {
+    margin: 68px auto 56px auto;
+    padding: 8px 0;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+  margin-top: 48px;
+}
+
+@media (min-width: 1025px) {
+  .contacts {
+    width: auto;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+}
+
+.positionContacts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 24px;
+}
+
+@media (min-width: 481px) {
+  .positionContacts {
+    right: 10px;
+  }
+}
+
+@media (min-width: 697px) {
+  .positionContacts {
+    right: 30px;
+  }
+}
+
+.smallScreen {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 20px 16px 20px;
+  gap: 16px;
+}
+
+@media (min-width: 481px) {
+  .smallScreen {
+    display: none;
+  }
+}
+
+.bigScreen {
+  display: none;
+}
+
+@media (min-width: 481px) {
+  .bigScreen {
+    display: block;
+  }
+}
+
+.centerItem {
+  display: flex;
+  justify-content: center;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto 32px auto;
+  width: 268px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (min-width: 481px) {
+  .logoWrapper {
+    width: auto;
+    margin: 0 0 24px 0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 697px) {
+  .logoWrapper {
+    font-size: 36px;
+    font-weight: 700;
+  }
+}

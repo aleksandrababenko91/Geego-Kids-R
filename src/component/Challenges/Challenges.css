@@ -12,7 +12,8 @@
 
 .headerContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 0px 50px;
 }
 
 .wrapper-challenges {
@@ -112,7 +113,7 @@
 }
 
 .text {
-  max-width: 566px;
+  max-width: 556px;
   padding: 20px;
   color:  #032741;; 
   border: 1px solid #F9B200;

@@ -1,0 +1,10 @@
+.helpList {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+.helpList > *:not(:last-child) {
+  margin-bottom: 16px;
+}

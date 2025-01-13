@@ -1,6 +1,5 @@
-
 .roleSection-categories {
-  background: #f0f0f0; 
+  background: #F2F3F4;
   padding: 32px 0;
 }
 @media (min-width: 420px) {
@@ -15,7 +14,6 @@
   }
 }
 .container-categories {
-  max-width: 1680px;
   display: flex;
   flex-direction: column;
   align-items: center;

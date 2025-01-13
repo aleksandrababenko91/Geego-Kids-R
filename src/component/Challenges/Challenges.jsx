@@ -31,18 +31,9 @@ const Challenges = (props) => {
     <div className="section-challenges">
       <div className="wrapper-challenges">
         <div className="headerContainer">
-          <div>
-            <h1 className="title-challenges">{t('home-city')}</h1>
-          </div>
-          {/* <div className="elips">
-            <img
-              className="rotate"
-              src="/image/Geego.svg"
-              alt="geego circle"
-            />
-          </div> */}
+          <h1 className="title-challenges">{t('home-city')}</h1>
+          <p className="text">{t('home-city-description')}</p>
         </div>
-        <p className="text">{t('home-city-description')}</p>
       </div>
       <div className="challengesContainer">
         <InputSearch
