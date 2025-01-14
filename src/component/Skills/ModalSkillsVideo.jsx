@@ -1,10 +1,10 @@
 import React from "react";
-import "./ModalChallengesVideo.css";
+import "./ModalSkillsVideo.css";
 import stateVideoModal from "./stateVideoModal";
 import { useBodyLock } from '../shared/useBodyLock'; 
 import LayoutModal from "../shared/LayoutModal";
 
-const ModalChallengesVideo = () => {
+const ModalSkillsVideo = () => {
   const isOpen = stateVideoModal((state) => state.isOpen);
   const onClose = stateVideoModal((state) => state.close);
   const selectedTask = stateVideoModal((state) => state.selectedTask);
@@ -41,4 +41,4 @@ const ModalChallengesVideo = () => {
   );
 };
 
-export default ModalChallengesVideo;
+export default ModalSkillsVideo;

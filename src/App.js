@@ -7,8 +7,8 @@ import Menubar from "./component/Menubar";
 import Header from './component/Header/Header';
 // import Challenges from "./component/Challenges";
 import ChallengesTasks from "./component/Challenges/ChallengesTasks";
-import Skills from "./component/Skills";
-import SkillsTasks from "./component/SkillsTasks";
+// import Skills from "./component/Skills";
+import SkillsTasks from "./component/Skills/SkillsTasks";
 import Toddlers from "./component/Toddlers";
 import ToddlersTasks from "./component/ToddlersTasks";
 import Login from "./component/Login";
@@ -18,6 +18,7 @@ import ToddlersFetchAPI from "./ToddlersFetchAPI";
 import SkillsFetchAPI from "./SkillsFetchAPI";
 import "./App.css";
 import Challenges from './component/Challenges/Challenges';
+import Skills from './component/Skills/Skills';
 import Footer from './component/Footer/Footer';
 
 

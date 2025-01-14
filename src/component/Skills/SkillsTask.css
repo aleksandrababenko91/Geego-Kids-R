@@ -1,0 +1,52 @@
+.card-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.image-task {
+  border: 20px solid #0EB1AF; 
+  border-radius: 100%;
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+@media (min-width: 696px) {
+  .image-task {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .image-task {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.name-task {
+  font-size: 16px; 
+  text-align: center;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  width: 260px;
+}
+
+@media (min-width: 696px) {
+  .name-task {
+    font-size: 18px;
+    width: 334px;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .name-task {
+    font-size: 24px;
+    width: 397px;
+  }
+}

@@ -12,9 +12,9 @@ const Footer = () => {
   // const { t } = useTranslation();
 
   return (
-<>
+    <>
       <div className="section-footer">
-      <div className="block-footer bigScreen">
+        <div className="block-footer bigScreen">
           <div className="footer">
             <Link to="/">
               <img src="/image/geegokids_logo_rgb.png" className="logo" alt="logo" className="logo" />
@@ -30,15 +30,15 @@ const Footer = () => {
           </div>
         </div>
         <div className="smallScreen">
-        <Link to="/">
-          <img src="/image/geegokids_logo_rgb.png" alt="logo" className="logo" />
-        </Link>
+          <Link to="/">
+            <img src="/image/geegokids_logo_rgb.png" alt="logo" className="logo" />
+          </Link>
           <FooterLinks />
           <HelpLinks helpLinks= {helpLinks} />
           <ContactLinks />
-          <SocialIcons  />
+          <SocialIcons />
         </div>
-          <p className="logoWrapper-footer">VARALA LOVE GEEGO</p>
+        <p className="logoWrapper-footer">VARALA LOVE GEEGO</p>
       </div>
     </>
   );

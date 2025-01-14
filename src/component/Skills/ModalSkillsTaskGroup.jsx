@@ -2,10 +2,10 @@ import stateModalSubCategoryGroup from "./stateModalSubCategoryGroup";
 import { useBodyLock } from '../shared/useBodyLock';
 import CloseBtn from '../shared/CloseBtn';
 import LayoutModal from "../shared/LayoutModal";
-import ChallengesTaskGroup from './ChallengesTaskGroup';
-import './ModalChallengesTaskGroup.css';
+import SkillsTaskGroup from './SkillsTaskGroup';
+import './ModalSkillsTaskGroup.css';
 
-const ModalChallengesTaskGroup = () => {
+const ModalSkillsTaskGroup = () => {
   const isOpen = stateModalSubCategoryGroup((state) => state.isOpen);
   const onClose = stateModalSubCategoryGroup((state) => state.close);
   const selectedData = stateModalSubCategoryGroup((state) => state.selectedData); // Получаем выбранные данные
@@ -22,17 +22,17 @@ const ModalChallengesTaskGroup = () => {
             <img src="/image/close_black.svg"  onClick={onClose} />
           </div>
           <h1 className="title">{selectedData.title}</h1>
-          {selectedData.challenges && selectedData.challenges.map((challenge) => {
+          {selectedData.skills && selectedData.skills.map((skill) => {
                 return (
-                  challenge.task_groups[0] && 
-                  challenge.task_groups[0].tasks[0] && (
-                    <li className="modal-card" key={challenge.id}>
-                      <ChallengesTaskGroup 
-                        title={challenge.title}
-                        description={challenge.description}
-                        //key={challenge.id}
-                        imgUrl={challenge.task_groups[0].tasks[0].thumbnail}
-                        challenge={challenge}
+                  skill.task_groups[0] && 
+                  skill.task_groups[0].tasks[0] && (
+                    <li className="modal-card" key={skill.id}>
+                      <SkillsTaskGroup 
+                        title={skill.title}
+                        description={skill.description}
+                        //key={skill.id}
+                        imgUrl={skill.task_groups[0].tasks[0].thumbnail}
+                        skill={skill}
                       />
                     </li>
                   )
@@ -45,4 +45,4 @@ const ModalChallengesTaskGroup = () => {
   );
 };
 
-export default ModalChallengesTaskGroup;
+export default ModalSkillsTaskGroup;

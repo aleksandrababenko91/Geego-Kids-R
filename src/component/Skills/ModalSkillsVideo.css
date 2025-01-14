@@ -1,0 +1,156 @@
+.wrapper-modal-video {
+  padding: 16px 16px 80px 16px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .wrapper-modal-video {
+    padding: 40px 16px 80px 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper-modal-video {
+    padding: 10vh 16px;
+  }
+}
+
+.inRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.modal-video {
+  border: 2px solid #0EB1AF; 
+  min-width: 270px;
+
+  background: #032741;
+  padding: 44px 8px 24px 8px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F9B200;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .modal-video {
+    padding: 48px 32px 32px 32px;
+    min-width: 500px;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-video {
+    min-width: 700px;
+  }
+}
+
+
+
+.closeButton {
+  background: white;
+  margin-bottom: 2%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+@media (min-width: 768px) {
+ .closeButton {
+    top: 10px;
+    right: 18px;
+
+  }
+}
+
+.infoBtn{
+  background: white;
+  margin-bottom: 2%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title-modal-video {
+  text-align: center;
+  width: 100%;
+  font-size: 16px; 
+  color: #F2F3F4;
+}
+
+@media (min-width: 768px) {
+  .title-modal-video{
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title-modal-video {
+    font-size: 40px;
+  }
+}
+
+.video-modal {
+  width: 100%;
+  height: 80vh;
+}
+
+
+
+.info-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+
+ 
+}
+
+
+.info-icon {
+  font-size: 1.5rem;
+  color:rgb(243, 245, 246); /* Цвет значка */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+.info-alert {
+  position: absolute;
+  left: 100%;
+  width: 100%;
+  height: fit-content;
+  padding: 20px;
+  background: #032741;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #F9B200;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+
+
+
+
+.info-container:hover .info-alert {
+  opacity: 1;
+  visibility: visible;
+}

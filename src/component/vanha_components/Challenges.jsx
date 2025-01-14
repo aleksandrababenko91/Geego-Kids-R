@@ -12,7 +12,6 @@ const Challenges = (props) => {
     <div className="Challenges main-category">
       <h2>
         {t('home-city')}
-        
         <i className="fa-solid fa-circle"></i>
         <i className="fa-solid fa-circle"></i>
         <i className="fa-solid fa-circle"></i>
