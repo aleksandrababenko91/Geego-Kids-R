@@ -5,12 +5,13 @@ import AtNurseries from "./component/AtNurseries";
 import AtSchool from "./component/AtSchool";
 import Menubar from "./component/Menubar";
 import Header from './component/Header/Header';
-// import Challenges from "./component/Challenges";
+
 import ChallengesTasks from "./component/Challenges/ChallengesTasks";
 // import Skills from "./component/Skills";
 import SkillsTasks from "./component/Skills/SkillsTasks";
-import Toddlers from "./component/Toddlers";
-import ToddlersTasks from "./component/ToddlersTasks";
+// import SkillsTasks from "./component/SkillsTasks";
+import Toddlers from "./component/Toddlers/Toddlers";
+import ToddlersTasks from "./component/Toddlers/ToddlersTasks";
 import Login from "./component/Login";
 import useToken from "./useToken";
 import ChallengesFetchAPI from "./ChallengesFetchAPI";

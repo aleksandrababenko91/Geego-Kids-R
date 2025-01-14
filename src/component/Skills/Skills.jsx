@@ -28,6 +28,10 @@ const Skills = (props) => {
     setVisibleCount((prevCount) => prevCount + 4); 
   };
 
+
+  console.log("PROVERKA:props.skillsState", props.skillsState);
+  console.log("#2:filteredCategories", filteredCategories);
+
   return (
     <div className="section-skills">
       <div className="wrapper-skills">
