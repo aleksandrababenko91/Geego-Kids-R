@@ -29,8 +29,6 @@ const Skills = (props) => {
   };
 
 
-  console.log("PROVERKA:props.skillsState", props.skillsState);
-  console.log("#2:filteredCategories", filteredCategories);
 
   return (
     <div className="section-skills">

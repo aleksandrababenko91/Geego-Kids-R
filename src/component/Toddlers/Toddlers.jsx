@@ -14,14 +14,14 @@ const Toddlers = (props) => {
       <div className="wrapper-toddlers">
         <div className="headerContainer">
           <div className="titleDots">
-          <h1 className="title-Toddlers">{t('home-city')}</h1>
+          <h1 className="title-toddlers">{t('home-school')}</h1>
           <div className="toddlers main-category">
             <i className="fa-solid fa-circle"></i>
             <i className="fa-solid fa-circle"></i>
             <i className="fa-solid fa-circle"></i>
           </div>
           </div>
-          <p className="text">{t('home-city-description')}</p>
+          <p className="text">{t('home-school-description')}</p>
         </div>
       </div>
       <div className="toddlersContainer">

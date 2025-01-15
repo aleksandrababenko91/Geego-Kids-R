@@ -1,0 +1,84 @@
+.Tasks {
+
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Gibson-Bold;
+    /* text-align: center; */
+    padding: 20px 10px
+}
+
+.Tasks h2 {
+    font-size: 40px;
+    padding: 10px 30px;
+}
+
+.Tasks i {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.Tasks.ChallengesTasks i {
+    color: #6b3776;
+}
+
+.Tasks.SkillsTasks i {
+    color: #0074ac;
+}
+
+.Tasks.ToddlersTasks i {
+    color: #eb6a39;
+}
+  
+.Tasks h2 i:nth-child(1) {
+    font-size: 15px;
+    margin-left: 30px;
+}
+  
+.Tasks h2 i:nth-child(2) {
+    font-size: 10px;
+}
+  
+.Tasks h2 i:nth-child(3) {
+    font-size: 5px;
+}
+
+.Tasks p{
+    font-family: Gibson-regular;
+    padding: 0 30px;
+}
+
+.Tasks ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Tasks ul li {
+    display: flex;
+    padding: 5px 10px;
+}
+
+@media (min-width: 576px) {
+    .Tasks ul li {
+        width: 50%;
+        padding: 5px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .Tasks ul li {
+        width: 33%;
+        padding: 5px;
+    }
+  }
+
+@media (min-width: 992px) {
+    .Tasks ul li {
+        width: 25%;
+        padding: 5px;
+    }
+  }
