@@ -1,19 +1,12 @@
-
-
 import { useEffect, useRef, useState } from "react";
-import { useLocale } from "next-intl";
-import { locales } from "@/i18n";
-import { usePathname, useRouter } from "@/navigation";
-import Image from "next/image";
-import style from './LanguageBtn.module.scss';
-import clsx from "clsx";
-import arrow from '../../../../public/images/arrow.svg'
+
+import './LanguageBtn.css';
+
+
+const locales = ["en", "es", "fr", "de"]; // Example locales
 
 export default function LanguageBtn() {
-  const router = useRouter();
-  const path = usePathname();
-  const locale = useLocale();
-  const [currentLocale, setCurrentLocale] = useState(locale);
+  const [currentLocale, setCurrentLocale] = useState("en"); // Default locale
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const submenuRef = useRef(null);
@@ -21,16 +14,14 @@ export default function LanguageBtn() {
   const handleCheckLocale = (item) => {
     setIsOpen(!isOpen);
     setCurrentLocale(item);
-    router.replace(path, { locale: item });
+    // Here you would replace this with the actual router logic
+    console.log(`Changed locale to: ${item}`);
   };
 
   const handleOutsideClick = (event) => {
     if (
       !submenuRef.current?.contains(event.target) &&
-      !(
-        event.target === menuRef.current ||
-        menuRef.current?.contains(event.target)
-      )
+      !(event.target === menuRef.current || menuRef.current?.contains(event.target))
     ) {
       setIsOpen(false);
     }
@@ -41,33 +32,28 @@ export default function LanguageBtn() {
     return () => window.removeEventListener("click", handleOutsideClick);
   }, [isOpen]);
 
-
-
   return (
-    <div className={style.box}>
+    <div className="box">
       <button
         ref={menuRef}
         onClick={() => setIsOpen(!isOpen)}
-        className={clsx(style.btn_lang, isOpen && style._active)}
+        className={`btn_lang ${isOpen ? "_active" : ""}`}
         type="button"
-        // aria-label={ariaLabelsText(currentLocale).btn_lang}
-
       >
         <span>{currentLocale.toUpperCase()}</span>
-        <span className={clsx(style.btn_icon, isOpen && style.btn_icon_up)}>
-          <Image src={arrow} alt="language arrow" width={15} height={15} />
+        <span className={`btn_icon ${isOpen ? "btn_icon_up" : ""}`}>
+          <img src="./image/arrow.svg" alt="language arrow" width={15} height={15} />
         </span>
       </button>
       {isOpen && (
-        <div ref={submenuRef} className={style.options}>
+        <div ref={submenuRef} className="options">
           {locales.map((item) =>
             item !== currentLocale ? (
               <button
-                className={style.options_item_btn}
+                className="options_item_btn"
                 key={item}
                 onClick={() => handleCheckLocale(item)}
                 type="button"
-
               >
                 {item.toUpperCase()}
               </button>

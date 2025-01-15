@@ -32,9 +32,9 @@
 }
 
 
-.logo {
+.logo-header {
   z-index: 9;
-  width: 195px;
+  width: 100px;
 }
 
 .actions {
