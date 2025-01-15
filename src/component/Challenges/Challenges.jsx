@@ -10,7 +10,7 @@ import LoadMore from '../shared/LoadMoreBtn';
 const Challenges = (props) => {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
-  const [visibleCount, setVisibleCount] = useState(1); 
+  const [visibleCount, setVisibleCount] = useState(16); 
 
   const challengesState = Array.isArray(props.challengesState) ? props.challengesState : [];
 

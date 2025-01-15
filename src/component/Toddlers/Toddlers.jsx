@@ -8,7 +8,7 @@ import LoadMore from '../shared/LoadMoreBtn';
 const Toddlers = (props) => {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
-  const [visibleCount, setVisibleCount] = useState(1); 
+  const [visibleCount, setVisibleCount] = useState(16); 
 
   const toddlersState = props.toddlersState || []; //  checking if massive is endefined
 

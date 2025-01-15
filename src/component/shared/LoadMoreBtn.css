@@ -1,0 +1,43 @@
+/* LoadMoreBtn.css */
+
+.btn {
+  font-size: 18px;
+  border-radius: 30px !important;
+  cursor: pointer;
+  padding: 16px 30px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    135deg,
+    #CDE8E8 0%,
+    #30B8B7 36.5%,
+    #1A9E9D 96%,
+    #176968 100%
+  );
+  box-shadow:
+    inset -3px -3px 3px rgba(4, 12, 88, 0.53);
+  transition: all 0.3s ease; 
+    color: #ffffff !important; 
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+
+ 
+}
+
+.btn:hover {
+  background: linear-gradient(
+    135deg,
+    #CDE8E8 0%,
+    #30B8B7 36.5%,
+    #1A9E9D 96%,
+    #176968 100%
+  );
+  box-shadow:
+    inset 3px 3px 3px rgba(255, 255, 255, 0.38),
+    inset -3px -3px 3px rgba(4, 12, 88, 0.53);
+  transition: all 0.3s ease; 
+
+}
