@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import React from "react";
-
 import './ToddlersSubCategory.css';
+import MainLink from '../shared/MainLink/MainLink';
+
+
 
 
 const ToddlersSubCategory = (props) => {
   return (
-    <Link to={`/Toddlers/${props.title}`}>
+    <MainLink href={`/Toddlers/${props.title}`}>
     <div className="container-card">
       <div className="imgContainer">
         <img src={props.imgUrl} alt={props.title} fill sizes="100%"  />
@@ -17,7 +19,7 @@ const ToddlersSubCategory = (props) => {
         </button>
       </div>
     </div>
-    </Link>
+    </MainLink>
 );
 };
 

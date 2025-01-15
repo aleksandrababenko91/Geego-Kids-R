@@ -1,10 +1,12 @@
 import React from 'react';
 import './Card.css';
+import MainLink from '../shared/MainLink/MainLink';
+
 
 const Card = ({ image, title, description, cardBackground, url }) => {
   return (
     <div className="article-categories" style={{ background: cardBackground }}>
-      <a href={url}>
+      <MainLink href={url}>
         <div className="imageContainer-categories">
           <img src={image} alt={title} style={{ width: 250, height: 230}}/>
         </div>
@@ -17,7 +19,7 @@ const Card = ({ image, title, description, cardBackground, url }) => {
           </div>
           <p className="shortDesc">{description}</p>
         </div>
-      </a>
+      </MainLink>
     </div>
   );
 };

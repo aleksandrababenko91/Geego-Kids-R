@@ -1,12 +1,14 @@
 .link {
   position: relative;
   padding: 3px 0;
-  color: #fff; /* замените на значение переменной var.$secondary-white */
-  transition: all 0.3s ease; /* замените на значения var.$transition-duration-base и var.$transition-timing-base */
+  color: #fff; 
+  transition: all 0.3s ease; 
+  text-decoration: none;
+
 }
 
 .link:hover {
-  color: #ff6600; /* замените на значение переменной var.$primary-hover */
+  color: #F9B200;
 }
 
 .link--modal {
@@ -24,16 +26,16 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #ff6600; /* замените на значение переменной var.$primary-hover */
+  background-color:rgb(14, 107, 184); 
   transition: all 0.3s ease;
 }
 
 .link--default:hover {
-  color: #ff6600; /* замените на значение переменной var.$primary-hover */
+  color:rgb(5, 64, 63); 
 }
 
 .link--default.active {
-  color: #ff6600; /* замените на значение переменной var.$primary-hover */
+  color: #F9B200;
 }
 
 .link--default.active::before {
@@ -41,16 +43,17 @@
 }
 
 .link--help {
-  border-bottom: 1px solid #fff; /* замените на значение переменной var.$secondary-white */
+  border-bottom: 1px solid #F2F3F4;
+
 }
 
 .link--help:hover,
 .link--help:focus {
-  border-bottom: 1px solid #ff6600; /* замените на значение переменной var.$primary-hover */
+  border-bottom: 1px solid  #F9B200;
 }
 
 .link--help:active {
-  border-bottom: 1px solid #fff; /* замените на значение переменной var.$secondary-white */
+  border-bottom: 1px solid #F2F3F4;
 }
 
 @media (max-width: 696px) {
@@ -63,16 +66,19 @@
 }
 
 .link--structure {
-  border-bottom: 1px solid #fff; /* замените на значение переменной var.$secondary-white */
+  border-bottom: 1px solid #F2F3F4;
+
 }
 
 .link--structure:hover,
 .link--structure:focus {
-  border-bottom: 1px solid #ff6600; /* замените на значение переменной var.$primary-hover */
+  border-bottom: 1px solid #F2F3F4;
+
 }
 
 .link--structure:active {
-  border-bottom: 1px solid #fff; /* замените на значение переменной var.$secondary-white */
+  border-bottom: 1px solid #F2F3F4;
+
 }
 
 .link--footer:active,
@@ -91,7 +97,7 @@
 }
 
 .link--burger.active {
-  color: #ff6600; /* замените на значение переменной var.$primary-hover */
+  color: #F9B200;
 }
 
 .link--burger.active::before {
@@ -101,7 +107,7 @@
   left: 0;
   width: 2px;
   height: 100%;
-  background-color: #ff6600; /* замените на значение переменной var.$primary-hover */
+  background-color: #ff6600;
 }
 
 .link--card {
@@ -110,14 +116,14 @@
   position: relative;
   padding: 10px 4px;
   display: block;
-  color: #fff; /* замените на значение переменной var.$secondary-white */
+  color: #fff; 
 }
 
 .link--card::before {
   content: "";
   width: 0;
   height: 1px;
-  background-color: #ccc; /* замените на значение переменной var.$primary-border */
+  background-color: #ccc; 
   position: absolute;
   bottom: 0;
   left: 0;
@@ -125,7 +131,7 @@
 }
 
 .link--card:hover {
-  color: #fff; /* замените на значение переменной var.$secondary-white */
+  color: #fff;
 }
 
 .link--card:hover::before {
@@ -136,14 +142,14 @@
   position: relative;
   padding: 11.5px 4px;
   display: block;
-  color: #000; /* замените на значение переменной var.$secondary-black */
+  color: #000; 
 }
 
 .link--blog::before {
   content: "";
   width: 0;
   height: 1px;
-  background-color: #ccc; /* замените на значение переменной var.$primary-border */
+  background-color: #ccc;
   position: absolute;
   bottom: 0;
   left: 0;

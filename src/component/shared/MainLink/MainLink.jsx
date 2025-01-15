@@ -41,7 +41,7 @@ const MainLink = ({
       "link",
       `link--${type}`,
       isActive(name) && "active",
-      type === linkTypes.MODAL && "underline", // Подчеркивание для MODAL
+
       className
     ),
     onClick: handleClick,
