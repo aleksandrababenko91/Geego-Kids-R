@@ -10,7 +10,7 @@ import LoadMore from '../shared/LoadMoreBtn';
 const Skills = (props) => {
   const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState("");
-  const [visibleCount, setVisibleCount] = useState(16); 
+  const [visibleCount, setVisibleCount] = useState(1); 
 
   const skillsState = Array.isArray(props.skillsState) ? props.skillsState : [];
 
