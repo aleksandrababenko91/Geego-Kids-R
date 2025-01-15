@@ -21,7 +21,7 @@ const ModalChallengesVideo = () => {
           <div class="info-container">
             <div class="info-icon">
               <h1 className="title-modal-video">{selectedTask.taskName}</h1>
-              <i class="fas fa-info-circle"></i> 
+              <img src="/image/info-thin.svg" width={20} height={20} />
             </div>
             <div class="info-alert">
               <p>{selectedTask.taskDescription}</p>
