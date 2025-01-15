@@ -1,9 +1,6 @@
-"use client";
-
-import styles  from './BurgerMenu.module.scss'
+import './BurgerMenu.css';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-import ButtonUlos from '@/components/shared/ButtonUlos/ButtonUlos';
+import React, { useState } from "react";
 
 export default function BurgerMenu() {
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
@@ -49,39 +46,35 @@ export default function BurgerMenu() {
   };
 
   return (
-    <div className={`${styles.navbar} ${burgerMenuActive ? styles.active : ""}`}>
-      <div className={styles.navigation}>
+    <div className={`navbar ${burgerMenuActive ? 'active' : ''}`}>
+      <div className="navigation">
         <div
-          className={styles.burgerMenuContainer}
-          onClick={() => toggleBurgerMenu()}
+          className="burgerMenuContainer"
+          onClick={toggleBurgerMenu}
         >
-          <div className={styles.burgerMenuTrigger}></div>
-          <div className={styles.burgerMenu}></div>
+          <div className="burgerMenuTrigger"></div>
+          <div className="burgerMenu"></div>
         </div>
       </div>
-      <div className={styles.content}>
+      <div className="content-burger">
         <motion.ul
           animate={burgerMenuActive ? 'open' : 'closed'}
           variants={motionVariants}
         >
-           <motion.li variants={listItemVariants}>
-                <a href="/geegocity">Geegocity</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/sporttiparkkki">Sporttiparkki</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/">Koulu</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/">Tietosuoja</a>
-              </motion.li>
-              <motion.li variants={listItemVariants}>
-                <a href="/">Ladata tiedosta</a>
-              </motion.li>
           <motion.li variants={listItemVariants}>
-          <ButtonUlos>Kirjaudu Ulos</ButtonUlos>
-
+            <a href="/geegocity">Geegocity</a>
+          </motion.li>
+          <motion.li variants={listItemVariants}>
+            <a href="/sporttiparkkki">Sporttiparkki</a>
+          </motion.li>
+          <motion.li variants={listItemVariants}>
+            <a href="/">Koulu</a>
+          </motion.li>
+          <motion.li variants={listItemVariants}>
+            <a href="/">Tietosuoja</a>
+          </motion.li>
+          <motion.li variants={listItemVariants}>
+            <a href="/">Ladata tiedosta</a>
           </motion.li>
         </motion.ul>
       </div>

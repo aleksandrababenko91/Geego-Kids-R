@@ -1,5 +1,3 @@
-@use '../../../../styles/mixins' as mixin;
-@use '../../../../styles/variables' as var;
 
 
 .navbar {
@@ -9,216 +7,193 @@
   align-items: center;
   justify-content: center;
   height: fit-content;
-  background-color: var.$primary-fon-card-1;
+  background-color:  #032741;
   width: 100%;
   top: 0;
   padding: 0 10vw;
   transition: 3.5s height;
-
-  .navigation {
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    padding: 2rem 30px 0 0;
-    width: calc(100% - 30vw);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    @media (min-width: 1025px) {
-      display: none;
-    }
-
-
-    .button {
-      background-color: transparent;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-      color: white;
-      transition: 0.5s color;
-    }
-   
-    .burgerMenuContainer {
-      content: "";
-      width: 55px;
-      height: 25px;
-      position: relative;
-      right: 0;
-      cursor: pointer;
-    
-
-    .burgerMenuTrigger{
-      content: "";
-      width:55px;
-      height: 25px;
-      position: relative;
-      right: 0;
-      cursor: pointer;
-      z-index: 100;
-    }
-
-    .burgerMenu {
-        content: "";
-        background-color: var.$secondary-white;
-        position: absolute;
-        width: 25px;
-        height: 2px;
-        z-index: 0;
-        top: calc(25px / 2 - 1.5px);
-        transition: 0.25s transform ease-in-out, 
-        0.5s background-color ease-in-out;
-    }
-
-    .burgerMenu::after {
-      content: "";
-      background-color: var.$secondary-white;
-      position: absolute;
-      width: 25px;
-      height: 2px;
-      transform: translateY(10px);
-      z-index: 0;
-      transition: 0.25s transform ease-in-out, 
-        0.5s background-color ease-in-out;
-    }
-    .burgerMenu::before {
-      content: "";
-      background-color: var.$secondary-white;
-      position: absolute;
-      width: 25px;
-      height: 2px;
-      transform: translateY(-10px);
-      z-index: 0;
-      transition: 0.25s width ease-in-out, 
-        0.5s background-color ease-in-out;
-    }
-    .burgerMenuTrigger:hover .burgerMenu {
-      width: 35px;
-    }
-    }
-  }
-
-  .content {
-    position: absolute;
-    top: 15vh;
-    display: none;
-
-    ul {
-      list-style: none;
-      li {
-        padding: 2rem 1rem;
-        a {
-          font-size: 2rem;
-          color: var.$secondary-white;
-          transition: 0.25s color;;
-        }
-        a:hover {
-          color: var.$primary-hover;
-          transition: 0.25s color;
-        }
-      }
-    }
-
-     @include mixin.media-q("xl") {
-     ul {
-       list-style: none;
-       li {
-         padding: 2rem 1rem;
-         a {
-           font-size: 1rem;
-           color: var.$secondary-white;;
-           transition: 0.25s color;;
-         }
-         a:hover {
-           color: var.$primary-hover;
-           transition: 0.25s color;
-         }
-       }
-     }
-   }
-     @include mixin.media-q("md") {
-     ul {
-       list-style: none;
-       li {
-         padding: 1rem 1rem;
-         a {
-           font-size: 2rem;
-           color: var.$secondary-white;;
-           transition: 0.25s color;;
-         }
-         a:hover {
-           color: var.$primary-hover;
-           transition: 0.25s color;
-         }
-       }
-     }
-   }
-  }
-
 }
 
+.navbar .navigation {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: calc(100% - 30vw);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (min-width: 1025px) {
+  .navbar .navigation {
+    display: none;
+  }
+}
+
+.navbar .navigation .button {
+  background-color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.5s color;
+}
+
+.navbar .navigation .burgerMenuContainer {
+  content: "";
+  width: 55px;
+  height: 25px;
+  position: relative;
+  right: 0;
+  cursor: pointer;
+}
+
+.navbar .navigation .burgerMenuContainer .burgerMenuTrigger {
+  content: "";
+  width: 55px;
+  height: 25px;
+  position: relative;
+  right: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* Стили для бургер-меню */
+.navbar .navigation .burgerMenuContainer .burgerMenu {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  z-index: 0;
+  top: calc(25px / 5 - 1.5px); 
+  transition: 0.25s transform ease-in-out, 0.5s background-color ease-in-out;
+}
+
+
+.navbar .navigation .burgerMenuContainer .burgerMenu::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  transform: translateY(-10px);
+  z-index: 0;
+  transition: 0.25s transform ease-in-out, 0.5s background-color ease-in-out;
+}
+
+
+.navbar .navigation .burgerMenuContainer .burgerMenu::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  transform: translateY(10px);
+  z-index: 0;
+  transition: 0.25s transform ease-in-out, 0.5s background-color ease-in-out;
+}
+
+
+.navbar.active .navigation .burgerMenuContainer .burgerMenu {
+  top: 0; 
+  background-color: transparent; 
+}
+
+.navbar.active .navigation .burgerMenuContainer .burgerMenu::before {
+  transform: translateY(-15px) rotate(45deg); 
+}
+
+.navbar.active .navigation .burgerMenuContainer .burgerMenu::after {
+  transform: translateY(15px) rotate(-45deg); 
+}
+
+.navbar .content-burger {
+  position: absolute;
+  top: 15vh;
+  display: none;
+}
+
+.navbar .content-burger  ul {
+  list-style: none;
+}
+
+.navbar .content-burger  ul li {
+  padding: 2rem 1rem;
+}
+
+.navbar .content-burger  ul li a {
+  font-size: 2rem;
+  color: white;
+  transition: 0.25s color;
+}
+
+.navbar .content-burger  ul li a:hover {
+  color: #D1D6DA;
+  transition: 0.25s color;
+}
+
+@media (min-width: 1200px) {
+  .navbar .content-burger  ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .content-burger  ul li a {
+    font-size: 2rem;
+  }
+}
 
 .navbar.active {
-  background-color: var.$primary-primary;
-
+  background-color: #032741;
   transition: 0.75s height;
   height: 100vh;
-
-.navigation {
-  .button {
-    color: white;
-    transition: 0.5s color ;
-  }
-
-  .burgerMenuContainer {
-    .burgerMenu {
-      width: 0;
-      background-color: white;
-      transition: 0.25s width ease-in-out, 
-      0.25 background-color ease-in-out;
-    }
-    .burgerMenu::after {
-      transform:  translateY(0px) rotate(135deg);
-      background-color: white;
-      transition: 0.25s transform ease-in-out, 
-      0.25 background-color ease-in-out;
-    }
-    .burgerMenu::before {
-      transform:  translateY(0px) rotate(-135deg);
-      background-color: white;
-      transition: 0.25s transform ease-in-out, 
-      0.25 background-color ease-in-out;
-    }
-    .burgerMenuTrigger:hover .burgerMenu {
-      width: 0px;
-    }
-  }
 }
 
-.content {
+.navbar.active .navigation .button {
+  color: white;
+  transition: 0.5s color;
+}
+
+.navbar.active .navigation .burgerMenuContainer .burgerMenu {
+  width: 0;
+  background-color: white;
+  transition: 0.25s width ease-in-out, 0.25s background-color ease-in-out;
+}
+
+.navbar.active .navigation .burgerMenuContainer .burgerMenu::after {
+  transform: translateY(0px) rotate(135deg);
+  background-color: white;
+  transition: 0.25s transform ease-in-out, 0.25s background-color ease-in-out;
+}
+
+.navbar.active .navigation .burgerMenuContainer .burgerMenu::before {
+  transform: translateY(0px) rotate(-135deg);
+  background-color: white;
+  transition: 0.25s transform ease-in-out, 0.25s background-color ease-in-out;
+}
+
+.navbar.active .content-burger  {
   display: initial;
-
-}
 }
 
 .logoName {
   display: flex;
   flex-direction: row;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   width: 100px;
   height: 100px;
   background-color: transparent;
   cursor: pointer;
-  color:black;
+  color: black;
   transition: 0.5s color;
-
 }
 
-.logo{
+.logo {
   width: 100px;
   height: 40px;
   border-radius: 10px;
-
-  
 }
