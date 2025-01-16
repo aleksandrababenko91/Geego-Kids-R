@@ -14,7 +14,7 @@
   }
 }
 
-.wrapper-header {
+.wrapperHeader {
   max-width: 1680px;
   margin: 0 auto;
   display: flex;
@@ -24,7 +24,7 @@
   padding: 0 10px;
 }
   @media (min-width: 1281px) {
-    .wrapperheader{
+    .wrapperHeader{
     padding: 0 40px;
 
 

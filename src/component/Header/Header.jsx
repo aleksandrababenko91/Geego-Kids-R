@@ -12,7 +12,7 @@ const Header = (props) => {
 
   return (
     <div className="mainHeader">
-      <div className="wrapper-header">
+      <div className="wrapperHeader">
         <Logo />
         <Menu />
         <Logout token={props.token} />
