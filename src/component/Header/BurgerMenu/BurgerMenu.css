@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center;
   height: fit-content;
-  background-color: rgb(107, 55, 124);
+  background-color: #032741;
+
   width: 100%;
   top: 0;
   padding: 0 10vw;
@@ -16,7 +17,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 0;
+  top: -30px;
   padding: 2rem 30px 0 0;
   width: calc(100% - 30vw);
   display: flex;
@@ -65,7 +66,9 @@
   width: 25px;
   height: 2px;
   z-index: 0;
-  top: calc(25px / 2 - 1.5px);
+  /* top: calc(25px / 2 - 1.5px); */
+  top: -100%;
+
   transition: 0.25s transform ease-in-out, 0.5s background-color ease-in-out;
 }
 
@@ -97,7 +100,7 @@
 
 .navbar .content {
   position: absolute;
-  top: 15vh;
+  top: 5vh;
   display: none;
 }
 

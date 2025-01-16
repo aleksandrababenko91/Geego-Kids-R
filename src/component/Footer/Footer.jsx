@@ -17,9 +17,9 @@ const Footer = () => {
       <div className="section-footer">
         <div className="block-footer bigScreen">
           <div className="footer">
-            {/* <Link to="/">
+            <Link to="/">
               <img src="/image/geegokids_logo_rgb.png" className="logo" alt="logo" className="logo" />
-            </Link> */}
+            </Link>
             {/* <Logo /> */}
             <FooterLinks />
             <HelpLinks helpLinks= {helpLinks} />

@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
 import './LanguageBtn.css';
-
 
 const locales = ["en", "es", "fr", "de"]; // Example locales
 
