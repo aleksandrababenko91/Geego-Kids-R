@@ -1,6 +1,9 @@
-import './BurgerMenu.css';
+
+
+import './BurgerMenu.css'
 import { motion } from 'framer-motion';
-import React, { useState } from "react";
+import { useState } from 'react';
+
 
 export default function BurgerMenu() {
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
@@ -50,32 +53,35 @@ export default function BurgerMenu() {
       <div className="navigation">
         <div
           className="burgerMenuContainer"
-          onClick={toggleBurgerMenu}
+          onClick={() => toggleBurgerMenu()}
         >
           <div className="burgerMenuTrigger"></div>
+
           <div className="burgerMenu"></div>
+
         </div>
       </div>
-      <div className="content-burger">
+      <div className="content">
+
         <motion.ul
           animate={burgerMenuActive ? 'open' : 'closed'}
           variants={motionVariants}
         >
-          <motion.li variants={listItemVariants}>
-            <a href="/geegocity">Geegocity</a>
-          </motion.li>
-          <motion.li variants={listItemVariants}>
-            <a href="/sporttiparkkki">Sporttiparkki</a>
-          </motion.li>
-          <motion.li variants={listItemVariants}>
-            <a href="/">Koulu</a>
-          </motion.li>
-          <motion.li variants={listItemVariants}>
-            <a href="/">Tietosuoja</a>
-          </motion.li>
-          <motion.li variants={listItemVariants}>
-            <a href="/">Ladata tiedosta</a>
-          </motion.li>
+           <motion.li variants={listItemVariants}>
+                <a href="/geegocity">Geegocity</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <a href="/sporttiparkkki">Sporttiparkki</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <a href="/">Koulu</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <a href="/">Tietosuoja</a>
+              </motion.li>
+              <motion.li variants={listItemVariants}>
+                <a href="/">Ladata tiedosta</a>
+              </motion.li>
         </motion.ul>
       </div>
     </div>
