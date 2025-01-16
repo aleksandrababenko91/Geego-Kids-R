@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import './LanguageBtn.css';
 
-const locales = ["en", "es", "fr", "de"]; // Example locales
+const locales = ["en", "fi", "se"]; // Example locales
 
 export default function LanguageBtn() {
   const [currentLocale, setCurrentLocale] = useState("en"); // Default locale
@@ -10,9 +10,8 @@ export default function LanguageBtn() {
   const submenuRef = useRef(null);
 
   const handleCheckLocale = (item) => {
-    setIsOpen(!isOpen);
+    setIsOpen(false);
     setCurrentLocale(item);
-    // Here you would replace this with the actual router logic
     console.log(`Changed locale to: ${item}`);
   };
 
@@ -31,11 +30,11 @@ export default function LanguageBtn() {
   }, [isOpen]);
 
   return (
-    <div className="box">
+    <div className="boxBtn">
       <button
         ref={menuRef}
         onClick={() => setIsOpen(!isOpen)}
-        className={`btn_lang ${isOpen ? "_active" : ""}`}
+        className={`btn_lang ${isOpen ? "_active" : ""} ${currentLocale}`}
         type="button"
       >
         <span>{currentLocale.toUpperCase()}</span>

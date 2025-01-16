@@ -1,11 +1,16 @@
-.box {
+.boxBtn {
   color: white;
   position: relative;
-  background-color: #032741 !important;
+  background: #032741 !important;
 
 }
 
 .btn_lang {
+
+  color: white;
+
+  background: #032741 !important;
+
   width: 65px;
   padding: 14px 8px;
   display: flex;
@@ -28,6 +33,7 @@
   width: 24px;
   height: 24px;
   transition: all 0.3s ease-in-out;
+  
 }
 
 .btn_icon > svg {
@@ -43,7 +49,7 @@
   }
 
   .options_item_btn:hover {
-    color: #D1D6DA;
+    color:rgb(20, 135, 230);
   }
 }
 
@@ -62,7 +68,12 @@
 
 .options_item_btn {
 
-  padding: 8px;
+  padding: 5px;
   text-align: start;
   transition: all 0.3s;
+  color: white;
+
+  background: #032741 !important;
 }
+
+

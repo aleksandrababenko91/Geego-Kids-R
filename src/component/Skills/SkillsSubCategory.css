@@ -5,6 +5,9 @@
   overflow: hidden;
   width: 250px; 
   height: 250px;
+  padding: 30px 0px;
+
+
 }
 
 @media (min-width: 810px) {
@@ -81,7 +84,7 @@
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  font-size: 32px;
+  font-size: 24px;
   margin: 50px 0;
   color: white;
   background: transparent;
