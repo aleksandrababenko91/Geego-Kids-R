@@ -2,7 +2,7 @@
   display: block;
   width: 60px;
   height: 60px;
-  fill: #secondary-white; /* Замените на нужный цвет */
+
 }
 
 @media (min-width: 1025px) {
@@ -16,7 +16,7 @@
   display: block;
   width: 120px;
   height: 120px;
-  fill: #secondary-white; /* Замените на нужный цвет */
+
 }
 
 @media (max-width: 696px) {

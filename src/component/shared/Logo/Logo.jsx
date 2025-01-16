@@ -5,7 +5,7 @@ export default function Logo() {
 
   return (
     <MainLink  url="/">
-        <img src="/image/geegokids_logo_rgb.png" fill sizes="100%" alt="logo"  className="logo-header"  />
+        <img src="/image/geegokids_logo_rgb.png" alt="logo"  className="logo-header"  />
     </MainLink>
 
   );
