@@ -7,7 +7,7 @@ const AnimatedVideo = () => {
 
 
     <div className="videoContainer">
-      <img src="/image/logo.svg"  fill sizes="100%"  alt="logo"  />
+      <img src="/image/logo.svg"  fill sizes="100%"  alt="logo" className="responsiveImage" />
     </div>
 
   );
