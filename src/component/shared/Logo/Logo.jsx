@@ -1,12 +1,14 @@
-import MainLink from "../../shared/MainLink/MainLink";
+// import MainLink from "../../shared/MainLink/MainLink";
 import './Logo.css';
+import { Link } from "react-router-dom";
+
 
 export default function Logo() {
 
   return (
-    <MainLink  url="/">
+    <Link to="/"> 
         <img src="/image/geegokids_logo_rgb.png" alt="logo"  className="logo-header"  />
-    </MainLink>
+    </Link>
 
   );
 }

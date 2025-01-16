@@ -15,7 +15,7 @@ const ChallengesSubCategory = (props) => {
   return (
     <div className="container-card">
       <div className="imgContainer">
-        <img src={props.imgUrl} alt={props.title} fill sizes="100%"  />
+        <img src={props.imgUrl} alt={props.title}   />
       </div>
       <div className="content">
         <button  className="title-card" onClick={handleClick}>

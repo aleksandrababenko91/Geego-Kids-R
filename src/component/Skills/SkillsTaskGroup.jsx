@@ -10,7 +10,7 @@ const SkillsTaskGroup = (props) => {
       <MainLink href={`/Skills/${props.title}`}>
         <div className="task-group-cardContainer">
           <div className="task-group-card">
-            <img src={props.imgUrl} alt="image" fill sizes="100%"  className="iconWrapper"/>
+            <img src={props.imgUrl} alt="image"  className="iconWrapper"/>
           </div>
           <div >
             <h2 className="task-group-header">{props.title}</h2>

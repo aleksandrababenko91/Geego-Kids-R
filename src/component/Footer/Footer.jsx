@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="block-footer bigScreen">
           <div className="footer">
             <Link to="/">
-              <img src="/image/geegokids_logo_rgb.png" className="logo" alt="logo" className="logo" />
+              <img src="/image/geegokids_logo_rgb.png" alt="logo" className="logo" />
             </Link>
             {/* <Logo /> */}
             <FooterLinks />

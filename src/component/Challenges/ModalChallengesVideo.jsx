@@ -18,12 +18,12 @@ const ModalChallengesVideo = () => {
       <div className="wrapper-modal-video">
         <div className="modal-video">
           <div className="inRow">
-          <div class="info-container">
-            <div class="info-icon">
+          <div className="info-container">
+            <div className="info-icon">
               <h1 className="title-modal-video">{selectedTask.taskName}</h1>
               <img src="/image/info-thin.svg" width={20} height={20} />
             </div>
-            <div class="info-alert">
+            <div className="info-alert">
               <p>{selectedTask.taskDescription}</p>
             </div>
           </div>

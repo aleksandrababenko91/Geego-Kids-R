@@ -1,6 +1,7 @@
 import React from 'react';
 import './Card.css';
 import MainLink from '../shared/MainLink/MainLink';
+import { Link } from "react-router-dom";
 
 
 const Card = ({ image, title, description, cardBackground, url }) => {
