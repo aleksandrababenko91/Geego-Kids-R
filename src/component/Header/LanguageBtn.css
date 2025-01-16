@@ -1,4 +1,3 @@
-
 .box {
   color: white;
   position: relative;
@@ -44,7 +43,7 @@
   }
 
   .options_item_btn:hover {
-    color:#D1D6DA;
+    color: #D1D6DA;
   }
 }
 
