@@ -39,7 +39,7 @@ export default function LanguageBtn() {
       >
         <span>{currentLocale.toUpperCase()}</span>
         <span className={`btn_icon ${isOpen ? "btn_icon_up" : ""}`}>
-          <img src="./image/arrow.svg" alt="language arrow" width={15} height={15} />
+          <img src="/image/arrow.svg" alt="language arrow" width={15} height={15} />
         </span>
       </button>
       {isOpen && (
