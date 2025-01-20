@@ -35,7 +35,7 @@
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  font-size: 32px;
+  font-family: Gibson-Bold;
 }
   @media (min-width: 500px) {
     .heading{
@@ -68,6 +68,10 @@
   overflow: hidden;
   margin-bottom: 24px;
   padding: 10px 24px 24px 24px;
+  font-family: Gibson-Regular;
+  font-size: 26px;
+
+
 }
 
 

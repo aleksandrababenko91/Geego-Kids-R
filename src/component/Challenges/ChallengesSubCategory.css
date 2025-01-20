@@ -65,6 +65,9 @@
   justify-content: space-between;
   opacity: 1;
   transition: opacity 0.3s ease 0s;
+  font-family: "Gibson", "sans-serif";
+  
+
 }
 
 @media (min-width: 810px) {
@@ -78,10 +81,7 @@
 }
 
 .title-card {
-  font-weight: 700;
-  line-height: 1.5;
-  letter-spacing: 0.01em;
-  font-size: 32px;
+
   margin: 50px 0;
   color: white;
   background: transparent;

@@ -10,6 +10,8 @@
   top: 0;
   padding: 0 10vw;
   transition: 3.5s height;
+  font-family: Gibson-Regular;
+
 }
 
 .navbar .navigationMain {

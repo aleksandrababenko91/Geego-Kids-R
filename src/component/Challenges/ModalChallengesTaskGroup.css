@@ -88,6 +88,8 @@
   font-weight: 600;
   line-height: 150%;
   color: #F2F3F4; 
+  font-family: "Gibson", "sans-serif";
+
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,8 @@
 .section-footer {
   padding: 36px 20px;
   background-color: #032741; 
+  font-family: Gibson-Regular;
+  font-size: 18px;
 }
 
 .block-footer {
@@ -38,6 +40,7 @@
   width: 100%;
   align-items: center;
   margin-top: 48px;
+
 }
 
 @media (min-width: 1025px) {

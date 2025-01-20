@@ -5,7 +5,7 @@
 }
 
 .text-link {
-
+  font-family: Gibson-Regular;
   font-weight: bold; 
   color: #f5f5f5; 
   font-size: 14px;
@@ -19,7 +19,7 @@
 @media (min-width: 697px) {
   .text-link {
 
-    font-weight: bold; /* Замените на вес из $h3-font */
+    font-weight: bold; 
   }
 }
 
@@ -29,5 +29,5 @@
 }
 
 .mail-link {
-  stroke: #f5f5f5; /* Замените $secondary-white на реальный цвет */
+  stroke: #f5f5f5; 
 }
