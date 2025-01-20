@@ -27,10 +27,11 @@ const App = () => {
   const [toddlersState, setToddlersState] = useState();
 
   const [language, setLanguage] = useState(() => {
-
+    // Устанавливаем язык из localStorage или по умолчанию "fi"
     return localStorage.getItem("lang") || "fi";
   });
 
+  // Функция для загрузки данных
   const fetchData = async (lang) => {
     if (!token) return;
 
@@ -43,14 +44,15 @@ const App = () => {
     setToddlersState(toddlers);
   };
 
+  // Загружаем данные при изменении языка
   useEffect(() => {
     fetchData(language);
   }, [token, language]);
 
-
+  // Обработчик смены языка
   const handleLanguageChange = (newLang) => {
     setLanguage(newLang);
-    localStorage.setItem("lang", newLang); 
+    localStorage.setItem("lang", newLang); // Сохраняем язык в localStorage
   };
 
   return !token ? (
@@ -59,10 +61,11 @@ const App = () => {
     <div>
       <Router>
       <Header 
-        token={token} 
-        currentLocale={language} 
-        onLanguageChange={handleLanguageChange} 
+  token={token} 
+  currentLocale={language} 
+  onLanguageChange={handleLanguageChange} 
 />
+
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/AtNurseries" element={<AtNurseries />}></Route>

@@ -11,7 +11,7 @@ export default function LanguageBtn({ currentLocale, onLanguageChange }) {
 
   const handleCheckLocale = (item) => {
     setIsOpen(false);
-    onLanguageChange(item); 
+    onLanguageChange(item);
   };
 
   const handleOutsideClick = (event) => {
