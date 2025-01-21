@@ -1,10 +1,12 @@
 import React from 'react';
 import './Card.css';
 import MainLink from '../shared/MainLink/MainLink';
-import { Link } from "react-router-dom";
-
+import { useTranslation } from 'react-i18next';
 
 const Card = ({ image, title, description, cardBackground, url }) => {
+  
+    const { t } = useTranslation();
+
   return (
     <div className="article-categories" style={{ background: cardBackground }}>
       <MainLink href={url}>
@@ -14,11 +16,12 @@ const Card = ({ image, title, description, cardBackground, url }) => {
         <div className="card-content">
           <div className="card-button customShadow animatePulse">
             <h3 className="heading">
-              {title}
+            {t(title)}
+
               <img src="/image/arrow.svg" alt="Arrow Icon" className="arrowIcon" />
             </h3>
           </div>
-          <p className="shortDesc">{description}</p>
+          <p className="shortDesc">{t(description)}</p>
         </div>
       </MainLink>
     </div>

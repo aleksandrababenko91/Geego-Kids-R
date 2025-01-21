@@ -31,7 +31,7 @@ const InputSearch = ({ onChange, className, placeholder = "Haku sana", value }) 
         className={clsx("close", value.length > 0 && "show")}
         onClick={handleClear}
       >
-        <img alt="close btn image" src="image/close_black.svg" width={20} height={20} />
+        <img alt="close btn" src="image/close_black.svg" width={20} height={20} />
       </button>
       <button
         onClick={handleSearch}

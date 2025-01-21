@@ -4,8 +4,6 @@ import React from "react";
 // import Button from "./Button";
 
 import './Home/Categories.css';
-import { items} from './Home/items';
-import { createKey } from './Home/createKey';
 import HeroSection from './Home/HeroSection/HeroSection';
 import Categories from './Home/Categories';
 

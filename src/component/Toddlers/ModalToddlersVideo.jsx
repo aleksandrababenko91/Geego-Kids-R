@@ -21,13 +21,13 @@ const ModalToddlersVideo = () => {
           <div className="info-container">
             <div className="info-icon">
               <h1 className="title-modal-video">{selectedTask.taskName}</h1>
-              <img src="/image/info-thin.svg" width={20} height={20} />
+              <img src="/image/info-thin.svg" alt="info sign" width={20} height={20} />
             </div>
             <div className="info-alert">
               <p>{selectedTask.taskDescription}</p>
             </div>
           </div>
-          <img src="/image/close_black.svg" className="closeButton" onClick={onClose} />
+          <img src="/image/close_black.svg" alt="close btn" className="closeButton" onClick={onClose} />
           </div>
           <video
             className="video-modal"

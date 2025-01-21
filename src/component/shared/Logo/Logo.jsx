@@ -1,4 +1,3 @@
-// import MainLink from "../../shared/MainLink/MainLink";
 import './Logo.css';
 import { Link } from "react-router-dom";
 

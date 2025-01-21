@@ -6,11 +6,8 @@ import './Footer.css';
 import { Link } from "react-router-dom";
 import HelpLinks from "./FooterLinks/HelpLinks";
 import { helpLinks } from "./FooterLinks/constants";
-// import { useTranslation } from 'react-i18next';
-// import Logo from '../shared/Logo/Logo';
 
 const Footer = () => {
-  // const { t } = useTranslation();
 
   return (
     <>
@@ -20,7 +17,6 @@ const Footer = () => {
             <Link to="/">
               <img src="/image/geegokids_logo_rgb.png" alt="logo" className="logo" />
             </Link>
-            {/* <Logo /> */}
             <FooterLinks />
             <HelpLinks helpLinks= {helpLinks} />
             <div className="contacts--footer">
@@ -40,7 +36,7 @@ const Footer = () => {
           <ContactLinks />
           <SocialIcons />
         </div>
-        <p className="logoWrapper-footer">VARALA LOVE GEEGO</p>
+        <p className="logoWrapper-footer">VARALA LOVES GEEGO</p>
       </div>
     </>
   );

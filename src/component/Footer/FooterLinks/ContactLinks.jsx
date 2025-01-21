@@ -5,13 +5,13 @@ const ContactLinks = () => {
   return (
     <div className="contacts-links">
       <div className="contact-link">
-        <img  src="/image/phone.svg" alt="phone image" height={29} />
+        <img  src="/image/phone.svg" alt="phone" height={29} />
         <p className="text-link">
         +358 40 5213 914
         </p>
       </div>
       <div className="contact-link">
-        <img src="/image/mail.svg" alt="mail image" width={25} height={29} className="mail-link" />
+        <img src="/image/mail.svg" alt="mail" width={25} height={29} className="mail-link" />
         <p className="text-link">
         info@geegokids.com
         </p>

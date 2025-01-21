@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
             translation: svTranslations,
         },
     },
-    lng: 'fi',
+    lng: localStorage.getItem("lang") || "fi", //localStorage by default "fi"
     fallbackLng: 'fi',
     interpolation: {
         escapeValue: false,

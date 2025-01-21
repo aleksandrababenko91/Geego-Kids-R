@@ -17,7 +17,8 @@ import "./App.css";
 import Challenges from './component/Challenges/Challenges';
 import Skills from './component/Skills/Skills';
 import Footer from './component/Footer/Footer';
-import LanguageBtn from "./component/Header/LanguageBtn";
+import i18n from './i18n'; 
+
 
 const App = () => {
   const { token, setToken } = useToken();
@@ -27,7 +28,6 @@ const App = () => {
   const [toddlersState, setToddlersState] = useState();
 
   const [language, setLanguage] = useState(() => {
-
     return localStorage.getItem("lang") || "fi";
   });
 
@@ -51,6 +51,8 @@ const App = () => {
   const handleLanguageChange = (newLang) => {
     setLanguage(newLang);
     localStorage.setItem("lang", newLang); 
+    i18n.changeLanguage(newLang); // localy in i18
+
   };
 
   return !token ? (
@@ -62,7 +64,7 @@ const App = () => {
         token={token} 
         currentLocale={language} 
         onLanguageChange={handleLanguageChange} 
-/>
+      />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/AtNurseries" element={<AtNurseries />}></Route>

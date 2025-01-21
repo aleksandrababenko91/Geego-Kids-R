@@ -1,6 +1,6 @@
 import stateModalSubCategoryGroup from "./stateModalSubCategoryGroup";
 import { useBodyLock } from '../shared/useBodyLock';
-import CloseBtn from '../shared/CloseBtn';
+
 import LayoutModal from "../shared/LayoutModal";
 import ChallengesTaskGroup from './ChallengesTaskGroup';
 import './ModalChallengesTaskGroup.css';
@@ -19,7 +19,7 @@ const ModalChallengesTaskGroup = () => {
       <div className="wrapper-modal">
         <div className="modal">
           <div className="closeBtn">
-            <img src="/image/close_black.svg"  onClick={onClose} />
+            <img src="/image/close_black.svg" alt="black close btn" onClick={onClose} />
           </div>
           <h1 className="title">{selectedData.title}</h1>
           {selectedData.challenges && selectedData.challenges.map((challenge) => {

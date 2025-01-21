@@ -28,6 +28,9 @@ const Challenges = (props) => {
     setVisibleCount((prevCount) => prevCount + 4); 
   };
 
+
+  console.log(process.env.REACT_APP_API_ENDPOINT);
+
   return (
     <div className="section-challenges">
       <div className="wrapper-challenges">
