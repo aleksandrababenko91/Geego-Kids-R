@@ -4,7 +4,6 @@ import "./ToddlersTaskGroup.css";
 import MainLink from '../shared/MainLink/MainLink';
 
 
-
 const ToddlersTaskGroup = (props) => {
   return (
       <MainLink href={`/Toddlers/${props.title}`}>

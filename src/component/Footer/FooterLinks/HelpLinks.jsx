@@ -6,11 +6,9 @@ import MainLink from "../../shared/MainLink/MainLink";
 
 import { useTranslation } from 'react-i18next';
 
-
 const HelpLinks = () => {
   const { t } = useTranslation();
-
-
+  
   return (
     <div className="helpList">
       {helpLinks.map(({ url, name, type }) => (

@@ -12,7 +12,7 @@ const MainLink = ({
   openInNewTab,
   ...rest
 }) => {
-  // Проверка активного состояния
+
   const isActive = (name) => {
     const pathname = window.location.pathname;
     if (pathname === "/" && name === "main") {
@@ -21,7 +21,7 @@ const MainLink = ({
     return pathname.split("/").includes(name);
   };
 
-  // Обработчик клика
+
   const handleClick = (event) => {
     if (type === linkTypes.HELP || type === linkTypes.DOCS || type === linkTypes.MODAL) {
       event.preventDefault();

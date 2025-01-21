@@ -17,9 +17,7 @@ const ChallengesTask = (props) => {
 
   return (
     <div className="card-task" onClick={handleClick}>
-      <div>
         <img className="image-task" src={props.imgUrl} alt={props.title} />
-      </div>
       <div>{props.title}</div>
     </div>
   );

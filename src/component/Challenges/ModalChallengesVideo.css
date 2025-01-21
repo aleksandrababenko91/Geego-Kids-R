@@ -121,7 +121,7 @@
 
 .info-icon {
   font-size: 1.5rem;
-  color:rgb(243, 245, 246); /* Цвет значка */
+  color:rgb(243, 245, 246); 
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -148,11 +148,6 @@
   font-family: "Gibson", "sans-serif";
 
 }
-
-
-
-
-
 
 .info-container:hover .info-alert {
   opacity: 1;

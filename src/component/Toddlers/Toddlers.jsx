@@ -10,7 +10,7 @@ const Toddlers = (props) => {
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(16); 
 
-  const toddlersState = props.toddlersState || []; //  checking if massive is endefined
+  const toddlersState = props.toddlersState || []; 
 
   const filteredToddlers = searchQuery
     ? toddlersState.filter(toddler =>

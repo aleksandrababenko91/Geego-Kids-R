@@ -10,9 +10,9 @@ const ModalSkillsTaskGroup = () => {
   const onClose = stateModalSubCategoryGroup((state) => state.close);
   const selectedData = stateModalSubCategoryGroup((state) => state.selectedData);
 
-  useBodyLock(isOpen); // block scrolling of Modal window
+  useBodyLock(isOpen); 
 
-  if (!selectedData) return null; // check data
+  if (!selectedData) return null; 
 
   return (
     <LayoutModal isOpen={isOpen} handleClose={onClose}>

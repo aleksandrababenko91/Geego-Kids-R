@@ -1,9 +1,6 @@
 import React from "react";
-
 import "./SkillsTaskGroup.css";
 import MainLink from '../shared/MainLink/MainLink';
-
-
 
 const SkillsTaskGroup = (props) => {
   return (

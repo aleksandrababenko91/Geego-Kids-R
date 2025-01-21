@@ -100,15 +100,15 @@
 .navbar .contentBurger {
   position: absolute;
   top: 5vh;
-  display: none; /* скрыто по умолчанию */
-  visibility: hidden; /* скрыто по умолчанию */
-  z-index: -1; /* скрыто по умолчанию */
+  display: none; 
+  visibility: hidden; 
+  z-index: -1; 
 }
 
 .navbar.active .contentBurger {
-  display: block; /* показываем при активации */
-  visibility: visible; /* делаем видимым */
-  z-index: 100; /* на передний план */
+  display: block; 
+  visibility: visible; 
+  z-index: 100;
 }
 
 .navbar .contentBurger ul {

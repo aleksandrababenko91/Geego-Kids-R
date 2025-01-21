@@ -8,7 +8,7 @@ const SkillsSubCategory = (props) => {
 
   const handleClick = () => {
     setSelectedData(props); 
-    open();  //Modal Window opens
+    open();  
   };
 
   return (

@@ -1,6 +1,5 @@
 import stateModalSubCategoryGroup from "./stateModalSubCategoryGroup";
 import { useBodyLock } from '../shared/useBodyLock';
-
 import LayoutModal from "../shared/LayoutModal";
 import ChallengesTaskGroup from './ChallengesTaskGroup';
 import './ModalChallengesTaskGroup.css';
@@ -8,7 +7,7 @@ import './ModalChallengesTaskGroup.css';
 const ModalChallengesTaskGroup = () => {
   const isOpen = stateModalSubCategoryGroup((state) => state.isOpen);
   const onClose = stateModalSubCategoryGroup((state) => state.close);
-  const selectedData = stateModalSubCategoryGroup((state) => state.selectedData); // Получаем выбранные данные
+  const selectedData = stateModalSubCategoryGroup((state) => state.selectedData); 
 
   useBodyLock(isOpen);
 

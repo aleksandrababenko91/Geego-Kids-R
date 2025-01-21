@@ -2,8 +2,6 @@ import clsx from "clsx";
 import { useRef } from "react";
 import "./InputSearch.css"; 
 
-
-
 const InputSearch = ({ onChange, className, placeholder = "Haku sana", value }) => {
   const inputRef = useRef(null);
 

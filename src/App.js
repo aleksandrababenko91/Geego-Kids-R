@@ -51,7 +51,7 @@ const App = () => {
   const handleLanguageChange = (newLang) => {
     setLanguage(newLang);
     localStorage.setItem("lang", newLang); 
-    i18n.changeLanguage(newLang); // localy in i18
+    i18n.changeLanguage(newLang); 
 
   };
 

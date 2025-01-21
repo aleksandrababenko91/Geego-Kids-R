@@ -44,7 +44,6 @@ export default function LanguageBtn({ currentLocale, onLanguageChange }) {
         className={`btn_lang ${isOpen ? "_active" : ""} ${currentLocale}`}
         type="button"
       >
-
         <span className={`btn_icon ${isOpen ? "btn_icon_up" : ""}`}>
           <img src="/image/arrow.svg" alt="language arrow" width={15} height={15} />
         </span>

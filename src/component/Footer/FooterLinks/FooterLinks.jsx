@@ -4,8 +4,6 @@ import './FooterLinks.css';
 import { createKey } from '../../shared/createKey';
 import { useTranslation } from 'react-i18next';
 
-
-
 const FooterLinks = () => {
   const { t } = useTranslation();
 

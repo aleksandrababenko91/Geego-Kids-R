@@ -14,7 +14,6 @@ const Logout = (props) => {
   
   return (
     <button className="btn_main" onClick={handleLogout}>
-      {/* <i className="fa-solid fa-user"></i> */}
       {t('menu-logout')}
     </button>
   );
