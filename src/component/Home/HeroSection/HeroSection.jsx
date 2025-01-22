@@ -1,12 +1,16 @@
-import AnimatedVideo from './AnimatedVideo';
+
 import './HeroSection.css';
-import Slogan from './Slogan';
+
+import DinoHero from './DinoHero';
+
+
 
 export default function HeroSection() {
   return (
     <div className="section">
-      <AnimatedVideo/>
-      <Slogan />
+
+      <DinoHero />
+
     </div>
   );
 }
