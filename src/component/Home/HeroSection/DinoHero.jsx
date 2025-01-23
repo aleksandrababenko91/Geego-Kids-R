@@ -1,41 +1,25 @@
 import React from "react";
 import './DinoHero.css';
-
 import './HeroSection.css';
-
-
 import { useTranslation } from 'react-i18next';
-
-
-
 
 const DinoHero = () => {
   const { t } = useTranslation();
 
-
-
   return (
- 
-    <section className="mentor">
+    <div className="mentor" data-aos="fade-left">
       <div className="mentor-container">
-
-
         <div className="mentor-wrapper">
           <div className="mentor-text">
-
-      <img src="/image/logo.svg"   alt="logo" className="responsiveImage" />
-
-
-
-<div className="textContainer">
-      <h1>{t("slogan")}</h1>
-    </div>
+            <img src="/image/logo.svg"   alt="logo pic" className="responsiveImage" />
+            <div className="textContainer">
+              <h1>{t("slogan")}</h1>
+            </div>
           </div>
-
           <div className="mentor-wrapper-img">
             <img
               className="mentor-image-mobile"
-              src="./image/dino.png"
+              src="./image/dino2.png"
               alt="About mentor team"
             />
             <img
@@ -46,7 +30,7 @@ const DinoHero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
