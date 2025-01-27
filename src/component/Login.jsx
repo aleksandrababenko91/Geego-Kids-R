@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from 'react-i18next';
-
 import LanguageBtn from './Header/LanguageBtn';
-
 import "./Login.css";
 
 const Login = (props) => {
