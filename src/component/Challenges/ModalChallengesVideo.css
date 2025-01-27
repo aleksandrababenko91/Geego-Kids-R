@@ -92,13 +92,13 @@
 
 @media (min-width: 768px) {
   .title-modal-video{
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 
 @media (min-width: 1200px) {
   .title-modal-video {
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 
