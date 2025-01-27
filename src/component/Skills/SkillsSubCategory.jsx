@@ -13,15 +13,15 @@ const SkillsSubCategory = (props) => {
 
   return (
     <div className="container-card">
+    <button  className="title-card" onClick={handleClick}>
       <div className="imgContainer">
-        <img src={props.imgUrl} alt={props.title} />
+        <img src={props.imgUrl} alt={props.title}   />
       </div>
       <div className="content">
-        <button className="title-card" onClick={handleClick}>
-          <span>{props.title}</span>
-        </button>
+        <span>{props.title}</span>
       </div>
-    </div>
+      </button>
+  </div>
   );
 };
 
