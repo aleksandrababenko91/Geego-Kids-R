@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import './LanguageBtn.css';
 import i18n from '../../i18n';
 
-
 const locales = ["en", "fi", "se"]; 
 
 export default function LanguageBtn({ currentLocale, onLanguageChange, colorClass }) {
@@ -13,9 +12,8 @@ export default function LanguageBtn({ currentLocale, onLanguageChange, colorClas
 
   const handleCheckLocale = (item) => {
     setIsOpen(false);
-    onLanguageChange(item) // server lang change func
+    onLanguageChange(item); // server lang change func
     i18n.changeLanguage(item);  //local lang change func
-    ; 
   };
 
   const handleOutsideClick = (event) => {
@@ -26,7 +24,6 @@ export default function LanguageBtn({ currentLocale, onLanguageChange, colorClas
       setIsOpen(false);
     }
   };
-
 
   useEffect(() => {
     window.addEventListener("click", handleOutsideClick);
@@ -55,7 +52,7 @@ export default function LanguageBtn({ currentLocale, onLanguageChange, colorClas
       {isOpen && (
         <div ref={submenuRef} className="options">
           {locales.map((item) =>
-            item !== currentLocale ? (
+            item !== currentLocale ?   (
               <button
                 className="options_item_btn"
                 key={item}

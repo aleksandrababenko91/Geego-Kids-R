@@ -18,7 +18,7 @@
 .inRow{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
 
 }
@@ -98,7 +98,7 @@
 
 @media (min-width: 1200px) {
   .title-modal-video {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
