@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-// import { Link } from "react-router-dom";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from 'react-i18next';
-// import { BrowserRouter as Router } from "react-router-dom";
+
+import LanguageBtn from './Header/LanguageBtn';
 
 import "./Login.css";
 
 const Login = (props) => {
+
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
   const [showPassword, setShowPassword] = useState(false);
+
+  const { setToken, currentLocale, onLanguageChange, colorClass} = props;
+
+
+  const { t } = useTranslation();
 
   const loginUser = async (credentials) => {
     return fetch(`${process.env.REACT_APP_API_ENDPOINT}/rest-auth/login/`, {
@@ -35,26 +42,18 @@ const Login = (props) => {
     setShowPassword(!showPassword);
   };
 
-  const { t } = useTranslation();
-  // const { t, i18n } = useTranslation();
 
-  // const handleLanguageChange = (lng) => {
-  //   i18n.changeLanguage(lng);
-  //   localStorage.setItem("lang", lng);
-  // };
 
   return (
     <div className="login-wrapper">
+    <div className="titleLangWrapper">
       <h1>{t('login')}</h1>
-      {/* 
-      <p className="register-languages-links">
-           <Router>
-           <Link to="#!" onClick={() => handleLanguageChange('fi')}>SUOMI</Link>
-          <Link to="#!" onClick={() => handleLanguageChange('sv')}>RUOTSI</Link>
-           <Link to="#!" onClick={() => handleLanguageChange('en')}>EN</Link>
-          </Router>*
-      </p>
-       */}
+      <LanguageBtn   
+        currentLocale={currentLocale} 
+        onLanguageChange={onLanguageChange} 
+        colorClass="btn_lang_white" 
+      />
+      </div>
       <p className="register-form-link">
         {t('login-code')}
         <a

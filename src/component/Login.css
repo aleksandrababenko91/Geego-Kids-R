@@ -59,7 +59,7 @@
 .login-wrapper button {
     font-size: 20px;
     text-align: center;
-    margin: 40px 0 20px 0;
+    margin: 10px 0 1px 0;
     background-color: #032741;
     color: white;
 }
@@ -126,5 +126,13 @@
     .login-wrapper .login-note {
         width: 40%;
     }
+
+}
+
+
+.titleLangWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 
 }

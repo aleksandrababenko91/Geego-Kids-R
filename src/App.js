@@ -56,7 +56,10 @@ const App = () => {
   };
 
   return !token ? (
-    <Login setToken={setToken} />
+    <Login 
+    setToken={setToken} 
+    currentLocale={language} 
+    onLanguageChange={handleLanguageChange}   />
   ) : (
     <div>
       <Router>

@@ -6,7 +6,7 @@ import i18n from '../../i18n';
 
 const locales = ["en", "fi", "se"]; 
 
-export default function LanguageBtn({ currentLocale, onLanguageChange }) {
+export default function LanguageBtn({ currentLocale, onLanguageChange, colorClass }) {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const submenuRef = useRef(null);
@@ -33,17 +33,21 @@ export default function LanguageBtn({ currentLocale, onLanguageChange }) {
     return () => window.removeEventListener("click", handleOutsideClick);
   }, [isOpen]);
 
-
-
-
   return (
-    <div className="boxBtn">
+    <div className={`boxBtn ${colorClass}`}>
       <button
         ref={menuRef}
         onClick={() => setIsOpen(!isOpen)}
-        className={`btn_lang ${isOpen ? "_active" : ""} ${currentLocale}`}
+        className={`btn_lang ${colorClass} ${isOpen ? "_active" : ""} ${currentLocale}`}
         type="button"
       >
+         <img
+          src={`/image/flags/${currentLocale}.png`}
+          alt={`${currentLocale} flag`}
+          className="flag_icon"
+          width={20}
+          height={20}
+        />
         <span className={`btn_icon ${isOpen ? "btn_icon_up" : ""}`}>
           <img src="/image/arrow.svg" alt="language arrow" width={15} height={15} />
         </span>

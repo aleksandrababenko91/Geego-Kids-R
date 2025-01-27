@@ -1,8 +1,11 @@
 import './BurgerMenu.css'
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function BurgerMenu() {
+  const { t } = useTranslation();
+
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
 
   const toggleBurgerMenu = () => {
@@ -62,19 +65,19 @@ export default function BurgerMenu() {
           variants={motionVariants}
         >
           <motion.li variants={listItemVariants}>
-            <a href="/Challenges">Geegocity</a>
+            <a href="/Challenges">{t("home-city")}</a>
           </motion.li>
           <motion.li variants={listItemVariants}>
-            <a href="/Skills">Sporttiparkki</a>
+            <a href="/Skills">{t("home-sport")}</a>
           </motion.li>
           <motion.li variants={listItemVariants}>
-            <a href="/Toddlers">Koulu</a>
+            <a href="/Toddlers">{t("home-school")}</a>
           </motion.li>
           <motion.li variants={listItemVariants}>
-            <a href="/">Tietosuoja</a>
+            <a href="/">{t("palaute")}</a>
           </motion.li>
           <motion.li variants={listItemVariants}>
-            <a href="/">Ladata tiedosta</a>
+            <a href="/">{t("ladata")}</a>
           </motion.li>
         </motion.ul>
       </div>
