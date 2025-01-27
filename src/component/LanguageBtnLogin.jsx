@@ -1,5 +1,4 @@
 import React from "react";
-import { useTranslation } from 'react-i18next'; 
 import './LanguageBtnLogin.css';
 import i18n from '../i18n';
 
@@ -13,18 +12,18 @@ export default function LanguageBtn({ currentLocale, onLanguageChange, colorClas
   };
 
   return (
-    <div className={`boxBtn ${colorClass}`}>
+    <div className={`boxBtnLogin ${colorClass}`}>
       {locales.map((locale) => (
         <button
           key={locale}
-          className={`btn_lang ${colorClass} ${currentLocale === locale ? "_active" : ""}`}
+          className={`btn_langLogin ${colorClass} ${currentLocale === locale ? "_active" : ""}`}
           onClick={() => handleCheckLocale(locale)}
           type="button"
         >
           <img
             src={`/image/flags/${locale}.png`}
             alt={`${locale} flag`}
-            className="flag_icon"
+            className="flag_iconLogin"
             width={20}
             height={20}
           />

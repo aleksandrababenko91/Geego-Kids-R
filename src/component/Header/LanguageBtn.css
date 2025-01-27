@@ -3,15 +3,8 @@
   position: relative;
   background: #032741 !important;
   font-family: Gibson-regular;
-
 }
 
-.boxBtn_white{
-  background: white !important;
-
-
-
-}
 .btn_lang {
   color: white;
   background: #032741 !important;
@@ -61,7 +54,7 @@
 .options {
   display: flex;
   flex-direction: column;
-  background-color: transparent;
+  background-color:#032741;
   width: 65px;
   border-radius: 2px;
   position: absolute;
@@ -80,11 +73,3 @@
   background: #032741 !important;
 }
 
-
-.btn_lang_white {
-  background: white !important;
-}
-
-.btn_lang_blue {
-  background: #032741 !important;
-}

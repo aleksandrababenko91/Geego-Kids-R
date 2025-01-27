@@ -1,4 +1,4 @@
-.boxBtn {
+.boxBtnLogin {
   color: white;
   position: relative;
   background: transparent !important;
@@ -8,14 +8,14 @@
 
 }
 
-.boxBtn_white{
+.boxBtnLogin_white{
   background: transparent !important;
 
 
 
 
 }
-.btn_lang {
+.btn_langLogin {
   color: white;
   background: transparent !important;
 
@@ -26,69 +26,8 @@
   transition: all 0.3s ease-in-out; 
 }
 
-._active {
-  opacity: 0.65;
-}
 
-.btn_icon_up {
-  transform: rotate(180deg);
-}
-
-.btn_icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  transition: all 0.3s ease-in-out;
-  
-}
-
-.btn_icon > svg {
-  display: block;
-  width: 15px;
-  height: 9px;
-}
-
-
-@media (any-hover: hover) {
-  .btn_lang:hover {
-    opacity: 0.65;
-  }
-
-  .options_item_btn:hover {
-    color:rgb(20, 135, 230);
-  }
-}
-
-
-.options {
-  display: flex;
-  flex-direction: row;
-  background: transparent !important;
-
-  width: 65px;
-  border-radius: 2px;
-  position: absolute;
-  bottom: -80px;
-  left: 0;
-  z-index: 5;
-}
-
-.options_item_btn {
-
-  padding: 5px;
-  text-align: start;
-  transition: all 0.3s;
-  color: white;
-
-
-  background: transparent !important;
-
-}
-
-
-.btn_lang_white {
+.btn_langLogin_white {
   background: transparent !important;
 
 }

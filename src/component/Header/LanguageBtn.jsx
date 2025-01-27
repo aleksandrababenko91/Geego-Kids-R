@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useTranslation } from 'react-i18next'; 
+
 import './LanguageBtn.css';
 import i18n from '../../i18n';
 
