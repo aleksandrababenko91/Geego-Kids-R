@@ -8,6 +8,6 @@ export const navigationLinks = [
 
 export const helpLinks = [
   { name: "palaute", url: "https://www.geegokids.com/fi/palaute/", type: linkTypes.DEFAULT },
-	{ name: "ladata", url: "https://www.geegokids.com/fi/palaute/", type: linkTypes.DEFAULT },
+	{ name: "ladata", url: "https://www.geegokids.com/fi/materiaalit/", type: linkTypes.DEFAULT },
 ];
 

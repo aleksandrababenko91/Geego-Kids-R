@@ -74,10 +74,10 @@ export default function BurgerMenu() {
             <a href="/Toddlers">{t("home-school")}</a>
           </motion.li>
           <motion.li variants={listItemVariants}>
-            <a href="/">{t("palaute")}</a>
+            <a href="https://www.geegokids.com/fi/palaute/">{t("palaute")}</a>
           </motion.li>
           <motion.li variants={listItemVariants}>
-            <a href="/">{t("ladata")}</a>
+            <a href="https://www.geegokids.com/fi/materiaalit/">{t("ladata")}</a>
           </motion.li>
         </motion.ul>
       </div>

@@ -36,7 +36,9 @@ const Footer = () => {
           <ContactLinks />
           <SocialIcons />
         </div>
-        <p className="logoWrapper-footer">VARALA LOVES GEEGO</p>
+
+          <img src="/image/varalaLove.png" alt="varala picture" className="logoWrapper-footer"></img>
+
       </div>
     </>
   );

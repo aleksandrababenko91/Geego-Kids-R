@@ -5,6 +5,6 @@ export const navigationLinksHeader = [
 	{ name: "home-sport", url: "/Skills", type: linkTypes.DEFAULT },
 	{ name: "home-school", url: "/Toddlers", type: linkTypes.DEFAULT },
   { name: "palaute", url: "https://www.geegokids.com/fi/palaute/", type: linkTypes.DEFAULT },
-	{ name: "ladata", url: "https://www.geegokids.com/fi/palaute/", type: linkTypes.DEFAULT },
+	{ name: "ladata", url: "https://www.geegokids.com/fi/materiaalit/", type: linkTypes.DEFAULT },
 ];
 

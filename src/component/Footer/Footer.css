@@ -110,23 +110,22 @@
   justify-content: center;
   text-align: center;
   margin: auto;
-  width: 268px;
-  font-weight: 700;
-  font-size: 20px;
+  max-width: 268px;
+
 }
 
 @media (min-width: 481px) {
   .logoWrapper {
-    width: auto;
+    max-width: 368px;
+
     margin: 0 0 24px 0;
-    font-size: 36px;
-    font-weight: 700;
+
   }
 }
 
 @media (min-width: 697px) {
   .logoWrapper-footer {
-    font-size: 36px;
-    font-weight: 700;
+    max-width: 668px;
+
   }
 }

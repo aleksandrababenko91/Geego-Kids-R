@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from 'react-i18next';
-import LanguageBtn from './Header/LanguageBtn';
+import LanguageBtnLogin from './LanguageBtnLogin';
 import "./Login.css";
 
 const Login = (props) => {
@@ -43,14 +43,14 @@ const Login = (props) => {
 
   return (
     <div className="login-wrapper">
-    <div className="titleLangWrapper">
-      <h1>{t('login')}</h1>
-      <LanguageBtn   
+      <div className="titleLangWrapper">
+      <LanguageBtnLogin   
         currentLocale={currentLocale} 
         onLanguageChange={onLanguageChange} 
         colorClass="btn_lang_white" 
-      />
-      </div>
+        />
+        </div>
+      <h1>{t('login')}</h1>
       <p className="register-form-link">
         {t('login-code')}
         <a

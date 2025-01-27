@@ -1,0 +1,104 @@
+.boxBtn {
+  color: white;
+  position: relative;
+  background: transparent !important;
+  font-family: Gibson-regular;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.boxBtn_white{
+  background: transparent !important;
+
+
+
+
+}
+.btn_lang {
+  color: white;
+  background: transparent !important;
+
+  width: 65px;
+  padding: 14px 8px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out; 
+}
+
+._active {
+  opacity: 0.65;
+}
+
+.btn_icon_up {
+  transform: rotate(180deg);
+}
+
+.btn_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.btn_icon > svg {
+  display: block;
+  width: 15px;
+  height: 9px;
+}
+
+
+@media (any-hover: hover) {
+  .btn_lang:hover {
+    opacity: 0.65;
+  }
+
+  .options_item_btn:hover {
+    color:rgb(20, 135, 230);
+  }
+}
+
+
+.options {
+  display: flex;
+  flex-direction: row;
+  background: transparent !important;
+
+  width: 65px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  z-index: 5;
+}
+
+.options_item_btn {
+
+  padding: 5px;
+  text-align: start;
+  transition: all 0.3s;
+  color: white;
+
+
+  background: transparent !important;
+
+}
+
+
+.btn_lang_white {
+  background: transparent !important;
+
+}
+
+.btn_lang_blue {
+  background: #032741 !important;
+}
+
+
+
+.titleLangWrapper {
+ margin-bottom: 80px;
+}
