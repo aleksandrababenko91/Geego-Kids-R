@@ -13,7 +13,7 @@ const DinoHero = () => {
           <div className="mentor-text">
             <img src="/image/logo.svg"   alt="logo pic" className="responsiveImage" />
             <div className="textContainer">
-              <h2>{t("slogan")}</h2>
+              <p>{t("slogan")}</p>
             </div>
           </div>
           <div className="mentor-wrapper-img">
