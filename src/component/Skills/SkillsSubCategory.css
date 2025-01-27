@@ -85,7 +85,7 @@
   line-height: 1.5;
   letter-spacing: 0.01em;
   font-size: 24px;
-  margin: 50px 0;
+  margin: 60px;
   color: white;
   background: transparent;
   border: none; 
@@ -95,5 +95,6 @@
 @media (min-width: 810px) {
   .title-card {
     font-size: 24px;
+    margin: 60px 20px;
   }
 }

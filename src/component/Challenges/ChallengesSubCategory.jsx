@@ -14,14 +14,14 @@ const ChallengesSubCategory = (props) => {
 
   return (
     <div className="container-card">
-      <div className="imgContainer">
-        <img src={props.imgUrl} alt={props.title}   />
-      </div>
-      <div className="content">
-        <button  className="title-card" onClick={handleClick}>
-          <span >{props.title}</span>
+      <button  className="title-card" onClick={handleClick}>
+        <div className="imgContainer">
+          <img src={props.imgUrl} alt={props.title}   />
+        </div>
+        <div className="content">
+          <span>{props.title}</span>
+        </div>
         </button>
-      </div>
     </div>
   );
 };
