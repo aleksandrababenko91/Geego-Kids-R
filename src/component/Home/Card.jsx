@@ -17,7 +17,6 @@ const Card = ({ image, title, description, cardBackground, url }) => {
           <div className="card-button customShadow animatePulse">
             <h3 className="heading">
             {t(title)}
-
               <img src="/image/arrow.svg" alt="Arrow Icon" className="arrowIcon" />
             </h3>
           </div>

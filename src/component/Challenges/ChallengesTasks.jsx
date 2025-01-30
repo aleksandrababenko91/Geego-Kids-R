@@ -28,6 +28,8 @@ const ChallengesTasks = (props) => {
                           title={task.title}
                           video={task.video}
                           description={task.description}
+                          allTasks={tasks.tasks} 
+
                         />
                     ));
                   })}
