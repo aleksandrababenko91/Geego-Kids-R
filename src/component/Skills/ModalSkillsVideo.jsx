@@ -5,14 +5,19 @@ import { useBodyLock } from '../shared/useBodyLock';
 import LayoutModal from "../shared/LayoutModal";
 
 const ModalSkillsVideo = () => {
+
+
   const isOpen = stateVideoModal((state) => state.isOpen);
   const onClose = stateVideoModal((state) => state.close);
-  const selectedTask = stateVideoModal((state) => state.selectedTask);
+  const selectedTaskIndex = stateVideoModal((state) => state.selectedTaskIndex);
+  const tasksWithVideos = stateVideoModal((state) => state.tasksWithVideos);
+  const next = stateVideoModal((state) => state.next);
+  const prev = stateVideoModal((state) => state.prev);
 
   useBodyLock(isOpen);
-
-  if (!selectedTask || !selectedTask.taskVideo) return null;
-
+  if (!tasksWithVideos.length || selectedTaskIndex === null) return null;
+  
+  const selectedTask = tasksWithVideos[selectedTaskIndex];
   return (
     <LayoutModal isOpen={isOpen} handleClose={onClose}>
       <div className="wrapper-modal-video">
@@ -29,12 +34,20 @@ const ModalSkillsVideo = () => {
           </div>
           <img src="/image/close_black.svg"  alt="close black btn" className="closeButton" onClick={onClose} />
           </div>
-          <video
-            className="video-modal"
-            src={selectedTask.taskVideo}
-            controls
-            autoPlay
-          />
+          <div className="videoCarousel">
+            <div onClick={prev} >
+              <img src="/image/arrow-back.svg" alt="Arrow Icon" className="arrowCarousel" />
+            </div>
+            <video
+              className="video-modal"
+              src={selectedTask.taskVideo}
+              controls
+              autoPlay
+            />
+            <div onClick={next} >
+              <img src="/image/arrow.svg" alt="Arrow Icon" className="arrowCarousel" />
+            </div>
+          </div>
         </div>
       </div>
     </LayoutModal>

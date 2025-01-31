@@ -28,6 +28,8 @@ const SkillsTasks = (props) => {
                           title={task.title}
                           video={task.video}
                           description={task.description}
+                          allTasks={tasks.sportschool_tasks}
+                          allTaskGroups={skill.sportschool_task_groups} 
                         />
                     ));
                   })}
