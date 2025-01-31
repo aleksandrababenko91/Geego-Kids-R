@@ -20,19 +20,19 @@ const ChallengesTasks = (props) => {
                   <p className="text-tasks">{challenge.description}</p>
                 </div>
                 <ul className="list-tasks">
-                  {challenge.task_groups.map((tasks) => {
-                    return tasks.tasks.map((task) => (
-                        <ChallengesTask
-                          key={task.id}
-                          imgUrl={task.thumbnail}
-                          title={task.title}
-                          video={task.video}
-                          description={task.description}
-                          allTasks={tasks.tasks} 
-
-                        />
-                    ));
-                  })}
+                  {challenge.task_groups.map((taskGroup) => 
+                    taskGroup.tasks.map((task) => (
+                      <ChallengesTask
+                        key={task.id}
+                        imgUrl={task.thumbnail}
+                        title={task.title}
+                        video={task.video}
+                        description={task.description}
+                        allTasks={taskGroup.tasks}
+                        allTaskGroups={challenge.task_groups} 
+                      />
+                    ))
+                  )}
                 </ul>
               </div>
             );

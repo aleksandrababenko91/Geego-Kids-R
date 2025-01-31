@@ -17,7 +17,6 @@ const ModalChallengesVideo = () => {
   
   const selectedTask = tasksWithVideos[selectedTaskIndex];
 
-
   return (
     <LayoutModal isOpen={isOpen} handleClose={onClose}>
     <div className="wrapper-modal-video">
