@@ -2,7 +2,7 @@ import React from "react";
 import './LanguageBtnLogin.css';
 import i18n from '../i18n';
 
-const locales = ["en", "fi", "se"]; 
+const locales = ["en", "fi", "sv"]; 
 
 export default function LanguageBtn({ currentLocale, onLanguageChange, colorClass }) {
 

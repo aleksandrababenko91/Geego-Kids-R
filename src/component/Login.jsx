@@ -11,7 +11,7 @@ const Login = (props) => {
   const [password, setPassword] = useState();
   const [showPassword, setShowPassword] = useState(false);
 
-  const { setToken, currentLocale, onLanguageChange, colorClass} = props;
+  const { currentLocale, onLanguageChange} = props;
 
 
   const { t } = useTranslation();
@@ -38,8 +38,6 @@ const Login = (props) => {
   const handleShowPassword = () => {
     setShowPassword(!showPassword);
   };
-
-
 
   return (
     <div className="login-wrapper">

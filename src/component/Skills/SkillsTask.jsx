@@ -3,8 +3,6 @@ import "./SkillsTask.css";
 import stateVideoModal from './stateVideoModal';
 
 const SkillsTask = (props) => {
-
-
   const open = stateVideoModal((state) => state.open);
   const handleClick = () => {
     if (!props.allTasks) {
@@ -13,8 +11,8 @@ const SkillsTask = (props) => {
     }
   
     const allTasksWithVideos = props.allTaskGroups
-    .flatMap(group => group.sportschool_tasks || []) // Проверяем, что массив существует
-    .filter(task => task?.video) // Проверяем, что task не undefined
+    .flatMap(group => group.sportschool_tasks || []) 
+    .filter(task => task?.video) 
     .map(task => ({
       taskName: task.title,
       taskVideo: task.video,

@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import './LanguageBtn.css';
 import i18n from '../../i18n';
 
-const locales = ["en", "fi", "se"]; 
+const locales = ["en", "fi", "sv"]; 
 
 export default function LanguageBtn({ currentLocale, onLanguageChange, colorClass }) {
   const [isOpen, setIsOpen] = useState(false);

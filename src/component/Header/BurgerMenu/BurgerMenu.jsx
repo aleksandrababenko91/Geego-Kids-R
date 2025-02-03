@@ -2,8 +2,10 @@ import './BurgerMenu.css'
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Logout from './Logout';
 
-export default function BurgerMenu() {
+
+const BurgerMenu = ({ token }) => {
   const { t } = useTranslation();
 
   const [burgerMenuActive, setBurgerMenuActive] = useState(false);
@@ -79,8 +81,13 @@ export default function BurgerMenu() {
           <motion.li variants={listItemVariants}>
             <a href="https://www.geegokids.com/fi/materiaalit/">{t("ladata")}</a>
           </motion.li>
+          <motion.li variants={listItemVariants}>
+            <Logout token={token} />         
+          </motion.li>
         </motion.ul>
       </div>
     </div>
   );
 }
+
+export default BurgerMenu;

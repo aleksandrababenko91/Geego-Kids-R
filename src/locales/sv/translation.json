@@ -8,15 +8,16 @@
     "login-submit": "Logga in",
     "login-privacy": "Geego Kids sekretesspolicy",
     "home": "Heja heja!!!",
-    "home-city":"GEEGOCITY",
-    "home-city-description":"Geegocity är en magisk stad där varje område lär barnet nya färdigheter.",
-    "home-sport":"IDROTTSPARK",
-    "home-sport-description":"Mångsidiga och lågtröskelövningar för olika sporter och lite dibadaaba.",
-    "home-school":"SKOLA",
-    "home-school-description":"Geegos skola kombinerar lärande och rörelse till en spännande upplevelse.",
-    "menu-logout":"Logga ut",
-    "slogan":"Med Geego glänser barnen med sina färdigheter!",
-     "ladata": "Ladata",
-    "palaute": "Palaute"
+    "home-city": "Geegocity",
+    "home-city-description": "I Geegocity utvecklas barnets rörelseförmågor och barnet lär sig att kombinera dem.&quot",
+    "home-sport":"Idrottspark",
+    "home-sport-description": "Mångsidiga och lättillgängliga övningar för olika idrottsgrenar.",
+    "home-school":"Skola",
+    "home-school-description": "Geegos skola kombinerar lärande och rörelse till en spännande upplevelse och erbjuder färdiga rörelsefärdigheter för skoldagen.",
+    "menu-logout": "Logga ut",
+    "slogan": "Geegocity stärks barnets rörelseförmågor, och barnet lär sig att kombinera dem.",
+    "ladata": "Material",
+    "palaute": "Feedback"
 
 }
+

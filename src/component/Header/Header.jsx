@@ -18,8 +18,6 @@ const Header = ({ token, currentLocale, onLanguageChange, colorClass }) => {
         <LanguageBtn 
           currentLocale={currentLocale} 
           onLanguageChange={onLanguageChange} 
-
-
         />
       </div>
       <BurgerMenu />
